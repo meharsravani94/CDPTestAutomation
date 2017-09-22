@@ -20,7 +20,7 @@
   		<artifactId>testng</artifactId>
   		<version>6.10</version>
   		<!-- <scope>test</scope> -->
-	</dependency>
+	</dependency> 
   	
   	<dependency>
   		<groupId>org.apache.poi</groupId>
@@ -76,6 +76,12 @@
     	<groupId>com.relevantcodes</groupId>
     	<artifactId>extentreports</artifactId>
     	<version>2.41.2</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.freemarker</groupId>
+	    <artifactId>freemarker</artifactId>
+	    <version>2.3.23</version>
 	</dependency>
   	
   </dependencies>
