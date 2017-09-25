@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.cdp.Scripts.MainThread">
+      <class name="main.java.com.cdp.Scripts.MainThread">
         <methods>
           <include name="MainScript"/>
         </methods>
-      </class> <!-- com.cdp.Scripts.MainThread -->
+      </class> <!-- main.java.com.cdp.Scripts.MainThread -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -98,6 +98,7 @@ class MainThread  {
 	public ExtentReports reports;
 	public ExtentTest logger;
 	public ExtentTest Child;
+	public String critical;
 	
 		
 	//DECLARING CONFIGURATION PROPERTIES
@@ -407,6 +408,13 @@ class MainThread  {
 						}
 						//TO PRINT PASS FAIL STATUS IN TEST STEPS SHEETS AFTER EXECUTING EACH STEPS
 						currentTestSuiteXLS.setCellData("TestSteps", colName, currentTestStepID, Keyword_execution_result_main);
+						if(Keyword_execution_result_main=="FAIL" && Proceed_ON_FAIL.equals("CRITICAL")){
+							APP_LOGS.debug("Test Cases Execution stopped as Proceed_ON_FAIL=CRITICAL");
+							resetApp();
+							i=method.length+10;//To break execute keywords FOR loop
+							currentTestStepID=5000;//To break execute current steps FOR loop
+							currentSuiteID=5000;
+						}
 						if(Keyword_execution_result_main=="FAIL" && Proceed_ON_FAIL.equals("NO")){
 							APP_LOGS.debug("Stopping Current Test Cases Execution because Test Step is Failed and Proceed_ON_FAIL=NO");
 							resetApp();
@@ -618,8 +626,12 @@ class MainThread  {
 	         }catch(Exception exc) {
 	         }
 	         // Set Subject: header field
-	         message.setSubject("CDP || Dashboard || "+browser+" Browser || Automation Test Report");	 
-	 		
+	         if(Proceed_ON_FAIL.equals("CRITICAL")) {
+	        	 message.setSubject("Testcase Execution Stopped || "+browser+" Browser || Automation Test Report");
+	         }
+	         else {
+	         message.setSubject("CDP-Dashboard || "+browser+" Browser || Automation Test Report");	 
+	         }
 	         // Create the message part
 	         BodyPart messageBodyPart = new MimeBodyPart();
 

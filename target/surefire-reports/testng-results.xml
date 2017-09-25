@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="89971" started-at="2017-09-25T07:48:13Z" finished-at="2017-09-25T07:49:43Z">
+  <suite name="Suite" duration-ms="60723" started-at="2017-09-25T11:30:25Z" finished-at="2017-09-25T11:31:26Z">
     <groups>
     </groups>
-    <test name="CDP Chrome" duration-ms="89971" started-at="2017-09-25T07:48:13Z" finished-at="2017-09-25T07:49:43Z">
+    <test name="CDP Chrome" duration-ms="60723" started-at="2017-09-25T11:30:25Z" finished-at="2017-09-25T11:31:26Z">
       <class name="main.java.com.cdp.Scripts.DriverScript">
-        <test-method status="PASS" signature="first(java.lang.String)[pri:0, instance:main.java.com.cdp.Scripts.DriverScript@2acf57e3]" name="first" is-config="true" duration-ms="89938" started-at="2017-09-25T13:18:13Z" finished-at="2017-09-25T13:19:43Z">
+        <test-method status="PASS" signature="first(java.lang.String)[pri:0, instance:main.java.com.cdp.Scripts.DriverScript@2acf57e3]" name="first" is-config="true" duration-ms="60717" started-at="2017-09-25T17:00:25Z" finished-at="2017-09-25T17:01:26Z">
           <params>
             <param index="0">
               <value>
