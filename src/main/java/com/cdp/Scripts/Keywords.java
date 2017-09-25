@@ -1,5 +1,4 @@
 package main.java.com.cdp.Scripts;
-
 import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
@@ -10,6 +9,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -20,15 +20,15 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.*;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class Keywords {
+
+public class Keywords  {
 	public  WebDriver driver1;
 	public Actions actions;
 	public WebDriver driver2;
@@ -36,6 +36,7 @@ public class Keywords {
 	public String Result2="";
 	public String Result3="";
 	public String Result4="";
+	
 	
 	//*****Launch Web Browser**********
 	//METHOD WILL LAUNCH CHROME/IE/FF BROWSER 

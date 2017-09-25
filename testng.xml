@@ -5,7 +5,7 @@
 <test name="CDP Chrome">
 	 <parameter name="browser" value="Chrome"></parameter>
 		<classes>
-			<class name="com.cdp.Scripts.DriverScript" />
+			<class name="main.java.com.cdp.Scripts.DriverScript" />
 		</classes>
 	</test>
 	
