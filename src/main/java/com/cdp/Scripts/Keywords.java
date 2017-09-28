@@ -1,7 +1,13 @@
 package main.java.com.cdp.Scripts;
 
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -11,27 +17,28 @@ import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
+import org.apache.http.client.ResponseHandler;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.BasicResponseHandler;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import main.java.com.cdp.Scripts.MainThread;
-
-import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 
 public class Keywords{
 	public  WebDriver driver1;
@@ -62,15 +69,25 @@ public class Keywords{
 					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/External Library Files/chromedriver_win32/chromedriver.exe");
 					driver1 =new ChromeDriver();
 					return driver1;
-				}else if(browser.equals("HeadLessBrowser")){
+				}else if(browser.equals("HeadLessUnitBrowser")){
 					//driver1 =new HtmlUnitDriver(BrowserVersion.CHROME);
-					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/External Library Files/chromedriver_win32/chromedriver.exe");
+					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/External Library Files/phantomjs-2.1.1-windows/phantomjs-2.1.1-windows/bin/phantomjs.exe");
 					ChromeOptions sd=new ChromeOptions();
-				     sd.addArguments("headless");
-				     sd.addArguments("window-size=1400,600");
-				     driver1 =new ChromeDriver(sd);
-				     System.out.println(driver1.getClass().getName());
-				     return driver1;
+				    sd.addArguments("headless");
+				    sd.addArguments("window-size=1400,600");
+				    driver1 =new ChromeDriver(sd);
+				    System.out.println(driver1.getClass().getName());
+				    return driver1;
+				}else if(browser.equals("HeadLessBrowser")){
+					
+					//driver1 =new HtmlUnitDriver(BrowserVersion.CHROME);
+					System.setProperty("phantomjs.binary.path", System.getProperty("user.dir")+"/External Library Files/phantomjs-2.1.1-windows/phantomjs-2.1.1-windows/bin/phantomjs.exe");
+					DesiredCapabilities dcaps = new DesiredCapabilities();
+		            dcaps.setCapability("takesScreenshot", true);
+		            //dcaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, phantomjs.getAbsolutePath());
+					driver1 =new PhantomJSDriver(dcaps);
+				    System.out.println(driver1.getClass().getName());
+				    return driver1;
 				}
 				
 				}catch(Exception e){
@@ -769,6 +786,48 @@ public class Keywords{
 				Thread.sleep(3000);
 				driver.navigate().to(MainThread.CONFIG.getProperty(target));
 				driver.navigate().refresh();
+				return "PASS";	
+			}catch (Exception e){
+				e.printStackTrace();
+				return "FAIL";
+				}
+		}
+		
+		public String GETAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName){
+			try{
+								
+				StringBuilder result = new StringBuilder();
+				StringBuilder result1 = new StringBuilder();
+			      URL url = new URL("http://52.221.32.110/dsapi/v1/LayoutsConfigs");
+			      HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+			      conn.setRequestMethod("GET");
+			      conn.setRequestProperty("Content-Type", "application/json");
+			      conn.setRequestProperty("Authorization", "abcd");
+			      int code = conn.getResponseCode();
+
+			      System.out.println("code="+code);
+			      BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+			      String line;
+			      while ((line = rd.readLine()) != null) {
+			    	 result.append(line);
+			    	 
+			    	 System.out.println("result");
+			    	 System.out.println("result"+result);
+			      }
+			      rd.close();
+			       //System.out.println(result);
+			       //System.out.println(result.getClass().getName());
+			       //System.out.println(result.indexOf("created", 1));
+			      BufferedReader rd1 = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+			      String line11;
+			      while ((line11 = rd.readLine()) != null) {
+			    	  result1.append(line11);
+			    	 
+			    	 System.out.println("getErrorStream");
+			    	 System.out.println("getErrorStream"+result1);
+			      }
+			      rd.close();
+			      
 				return "PASS";	
 			}catch (Exception e){
 				e.printStackTrace();

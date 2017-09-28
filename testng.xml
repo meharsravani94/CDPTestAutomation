@@ -2,13 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" verbose="3" parallel="tests">
 
-<test name="CDP Chrome">
+<!-- <test name="CDP Chrome">
 	<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="main.java.com.cdp.Scripts.DriverScript" />
 		</classes>
 </test>
-
+ -->
 <!-- <test name="CDP FF">
 	<parameter name="browser" value="FF"></parameter>
 		<classes>
@@ -24,13 +24,13 @@
 </test>
  -->
 
-<!-- <test name="CDP HeadLess">
+<test name="CDP HeadLess">
 	<parameter name="browser" value="HeadLessBrowser"></parameter>
 		<classes>
 			<class name="main.java.com.cdp.Scripts.DriverScript" />
 		</classes>
 </test>
- -->
+
 
 
 </suite>

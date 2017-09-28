@@ -133,7 +133,7 @@ class MainThread  {
 			closebrowsers();
 			AutomationTestReport();
 			copyExtentReportToJenkins();
-			SendEmail();
+			//SendEmail();
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -410,6 +410,7 @@ class MainThread  {
 								resultSet.add(Keyword_execution_result_main);
 								if (Keyword_execution_result_main.equals("PASS")){
 									logger.log(LogStatus.PASS, TSID+"  :  "+Keyword+"", Description);
+									
 								}else{
 									keywords.ExtentReportScreenShot(driver2, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName, logger, Keyword);
 								}
@@ -651,7 +652,7 @@ class MainThread  {
 	         }catch(Exception exc) {
 	         }
 	         // Set Subject: header field
-	         message.setSubject("CDP || Dashboard || "+browser+" Browser || Automation Test Report");	 
+	         message.setSubject("CDP-Dashboard || "+browser+" Browser || Automation Test Report");	 
 	 		
 	         // Create the message part
 	         BodyPart messageBodyPart = new MimeBodyPart();

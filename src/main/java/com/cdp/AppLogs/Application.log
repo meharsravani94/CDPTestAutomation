@@ -1,153 +1,51 @@
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome browser Started
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Calling MainScript
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::Browser Executing MainScript
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::GETTING DATE AND START TIME
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::INITIALIZING TEST RESULTS FOLDER WITH SYS DATE
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::FolderName2017-09-20
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::INITIALIZING SUBFOLDER NAME WITH SYS DATE, TIME IN HH:MM
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::SubFolderNameChrome-Results-17-53-05
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::Creatring Directory With Current Date
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::Created Directory With Current Date
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::Creating SubDirectory With Current TimeStamp & Browser Name
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::COPYING CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::COPY COMPLETED FOR CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::Created SubDirectory With Current TimeStamp & Browser Name
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::COPYING Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::COPY COMPLETED FOR Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::COPYING Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::COPY COMPLETED FOR Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-20/09/2017 17:53:05 main.java.com.cdp.Scripts.MainThread Chrome::READING SUITE_WEB XLS FILE FROM OUTPUT DIRECTORY
-20/09/2017 17:53:06 main.java.com.cdp.Scripts.MainThread CDPLogin -- Y
-20/09/2017 17:53:06 main.java.com.cdp.Scripts.MainThread Chrome::COPYING CDPLogin XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-20/09/2017 17:53:06 main.java.com.cdp.Scripts.MainThread Chrome::COPY COMPLETED FOR CDPLogin XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-20/09/2017 17:53:06 main.java.com.cdp.Scripts.MainThread CDPLogin -- Y
-20/09/2017 17:53:06 main.java.com.cdp.Scripts.MainThread Chrome**********Executing Test Cases**********CDPLogin
-20/09/2017 17:53:06 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
-20/09/2017 17:53:07 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:07 main.java.com.cdp.Scripts.MainThread TSID::TS01
-20/09/2017 17:53:07 main.java.com.cdp.Scripts.MainThread executing current keyword::LaunchWebBrowser
-20/09/2017 17:53:07 main.java.com.cdp.Scripts.MainThread executing keyword target::
-20/09/2017 17:53:07 main.java.com.cdp.Scripts.MainThread data::
-20/09/2017 17:53:07 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:07 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::NO
-20/09/2017 17:53:07 main.java.com.cdp.Scripts.MainThread Launching 1st Chrome ::Browser
-20/09/2017 17:53:07 main.java.com.cdp.Scripts.Keywords LaunchingChromeBrowser
-20/09/2017 17:53:12 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:12 main.java.com.cdp.Scripts.MainThread TSID::TS02
-20/09/2017 17:53:12 main.java.com.cdp.Scripts.MainThread executing current keyword::OpenWebApp
-20/09/2017 17:53:12 main.java.com.cdp.Scripts.MainThread executing keyword target::CDP_URL
-20/09/2017 17:53:12 main.java.com.cdp.Scripts.MainThread data::
-20/09/2017 17:53:12 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:12 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::NO
-20/09/2017 17:53:12 main.java.com.cdp.Scripts.Keywords Application Opening
-20/09/2017 17:53:30 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS]
-20/09/2017 17:53:30 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:30 main.java.com.cdp.Scripts.MainThread TSID::TS03
-20/09/2017 17:53:30 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyTitle
-20/09/2017 17:53:30 main.java.com.cdp.Scripts.MainThread executing keyword target::
-20/09/2017 17:53:30 main.java.com.cdp.Scripts.MainThread data::CDP Dashboard
-20/09/2017 17:53:31 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:31 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::NO
-20/09/2017 17:53:31 main.java.com.cdp.Scripts.Keywords Verification of App Title
-20/09/2017 17:53:31 main.java.com.cdp.Scripts.Keywords Verifying Title
-20/09/2017 17:53:32 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS]
-20/09/2017 17:53:32 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:32 main.java.com.cdp.Scripts.MainThread TSID::TS04
-20/09/2017 17:53:32 main.java.com.cdp.Scripts.MainThread executing current keyword::Maximize
-20/09/2017 17:53:32 main.java.com.cdp.Scripts.MainThread executing keyword target::
-20/09/2017 17:53:32 main.java.com.cdp.Scripts.MainThread data::
-20/09/2017 17:53:32 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:32 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::NO
-20/09/2017 17:53:32 main.java.com.cdp.Scripts.Keywords Maximizing Window
-20/09/2017 17:53:33 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS]
-20/09/2017 17:53:33 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:33 main.java.com.cdp.Scripts.MainThread TSID::TS05
-20/09/2017 17:53:33 main.java.com.cdp.Scripts.MainThread executing current keyword::isVisible
-20/09/2017 17:53:33 main.java.com.cdp.Scripts.MainThread executing keyword target::CDPLogo
-20/09/2017 17:53:33 main.java.com.cdp.Scripts.MainThread data::
-20/09/2017 17:53:33 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:33 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::NO
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS]
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread TSID::TS06
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread executing current keyword::isVisible
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread executing keyword target::HelpIcon
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread data::
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS]
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread TSID::TS07
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread executing keyword target::WelcomeMessage
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread data::WELCOME TO PARIS.COM
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-20/09/2017 17:53:34 main.java.com.cdp.Scripts.Keywords Verifying Text
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread TSID::TS08
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread executing keyword target::SignInButton
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread data::Sign In
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.Keywords Verifying Text
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread TSID::TS09
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread executing keyword target::ForgotPasswordLink
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread data::Forgot your password?
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.Keywords Verifying Text
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread TSID::TS10
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread executing keyword target::NewCustomerRegistrationLink
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread data::New Customer Registration
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.Keywords Verifying Text
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread TSID::TS11
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread executing current keyword::Type
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread executing keyword target::UserName
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread data::pariscustomer
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-20/09/2017 17:53:35 main.java.com.cdp.Scripts.Keywords Input the values in Test Box
-20/09/2017 17:53:36 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-20/09/2017 17:53:36 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:36 main.java.com.cdp.Scripts.MainThread TSID::TS12
-20/09/2017 17:53:36 main.java.com.cdp.Scripts.MainThread executing current keyword::Type
-20/09/2017 17:53:36 main.java.com.cdp.Scripts.MainThread executing keyword target::Password
-20/09/2017 17:53:36 main.java.com.cdp.Scripts.MainThread data::Test@123
-20/09/2017 17:53:36 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:36 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-20/09/2017 17:53:36 main.java.com.cdp.Scripts.Keywords Input the values in Test Box
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread TSID::TS13
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread executing keyword target::SignInButton
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread data::
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.Keywords Click on button
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread ******Looping CDPLogin ::Steps
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread TSID::
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread executing current keyword::resetApp
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread executing keyword target::CDP_URL
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread data::
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread TCID::CDPLogin
-20/09/2017 17:53:37 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-20/09/2017 17:53:51 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-20/09/2017 17:53:51 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
-20/09/2017 17:54:02 main.java.com.cdp.Scripts.MainThread Chrome exiting...
+27/09/2017 22:19:53 main.java.com.cdp.Scripts.MainThread HeadLessBrowser browser Started
+27/09/2017 22:19:53 main.java.com.cdp.Scripts.MainThread Calling MainScript
+27/09/2017 22:19:53 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::Browser Executing MainScript
+27/09/2017 22:19:53 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::GETTING DATE AND START TIME
+27/09/2017 22:19:53 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::INITIALIZING TEST RESULTS FOLDER WITH SYS DATE
+27/09/2017 22:19:53 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::FolderName2017-09-27
+27/09/2017 22:19:53 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::INITIALIZING SUBFOLDER NAME WITH SYS DATE, TIME IN HH:MM
+27/09/2017 22:19:53 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::SubFolderNameHeadLessBrowser-Results-22-19-53
+27/09/2017 22:19:53 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::Creatring Directory With Current Date
+27/09/2017 22:19:53 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::Created Directory With Current Date
+27/09/2017 22:19:53 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::Creating SubDirectory With Current TimeStamp & Browser Name
+27/09/2017 22:19:53 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPYING CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+27/09/2017 22:19:53 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPY COMPLETED FOR CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+27/09/2017 22:19:54 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::Created SubDirectory With Current TimeStamp & Browser Name
+27/09/2017 22:19:54 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPYING Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+27/09/2017 22:19:54 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPY COMPLETED FOR Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+27/09/2017 22:19:54 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPYING Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+27/09/2017 22:19:54 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPY COMPLETED FOR Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+27/09/2017 22:19:54 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::READING SUITE_WEB XLS FILE FROM OUTPUT DIRECTORY
+27/09/2017 22:19:54 main.java.com.cdp.Scripts.MainThread CDPLogin -- N
+27/09/2017 22:19:54 main.java.com.cdp.Scripts.MainThread API -- Y
+27/09/2017 22:19:54 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPYING API XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+27/09/2017 22:19:54 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPY COMPLETED FOR API XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+27/09/2017 22:19:54 main.java.com.cdp.Scripts.MainThread API -- Y
+27/09/2017 22:19:54 main.java.com.cdp.Scripts.MainThread HeadLessBrowser**********Executing Test Cases**********API
+27/09/2017 22:19:54 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+27/09/2017 22:19:55 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:55 main.java.com.cdp.Scripts.MainThread TSID::TS01
+27/09/2017 22:19:55 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
+27/09/2017 22:19:55 main.java.com.cdp.Scripts.MainThread executing keyword target::
+27/09/2017 22:19:55 main.java.com.cdp.Scripts.MainThread data::
+27/09/2017 22:19:55 main.java.com.cdp.Scripts.MainThread TCID::API
+27/09/2017 22:19:55 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread resultset[FAIL]
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
+27/09/2017 22:19:58 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+27/09/2017 22:20:00 main.java.com.cdp.Scripts.MainThread HeadLessBrowser exiting...
