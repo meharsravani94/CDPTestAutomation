@@ -77,20 +77,14 @@
     	<artifactId>extentreports</artifactId>
     	<version>2.41.2</version>
 	</dependency>
-	
+
 		<!-- https://mvnrepository.com/artifact/com.github.fge/json-schema-validator -->
-		<!-- <dependency>
+		<dependency>
 			<groupId>com.github.fge</groupId>
 			<artifactId>json-schema-validator</artifactId>
 			<version>2.2.6</version>
 		</dependency>
-		 -->
-		<dependency>
-	    <groupId>com.networknt</groupId>
-    		<artifactId>json-schema-validator</artifactId>
-    		<version>0.1.7</version>
-		</dependency>
-
+		
 		<!-- https://mvnrepository.com/artifact/com.github.fge/jackson-coreutils -->
 		<dependency>
 			<groupId>com.github.fge</groupId>
@@ -104,12 +98,12 @@
 			<artifactId>json-schema-core</artifactId>
 			<version>1.2.5</version>
 		</dependency>
-  	
+						  	
   </dependencies>
 
 
 
-<!-- <To call TestN.xml > -->
+<!-- <To call TestNG.xml > -->
 
 <build>
 

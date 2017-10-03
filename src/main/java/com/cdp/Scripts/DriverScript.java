@@ -388,6 +388,20 @@ class MainThread  {
 								Keyword_execution_result_main="NO RUN";
 								resultSet.add(Keyword_execution_result_main);
 							}
+						}else if(Keyword.equals("GETAPI") || Keyword.equals("DELETEAPI")){ 
+							long StepstartTime = System.currentTimeMillis();
+							String APIResponse=(String) method[i].invoke(keywords, driver1, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
+							long StepEndTime = System.currentTimeMillis();
+							ExecutionTime(StepEndTime, StepstartTime);
+							System.out.println("APIResponse="+APIResponse);
+							String[] APIRes=APIResponse.split("\\$");
+							resultSet.add(APIRes[0]);
+							APP_LOGS.debug("resultset"+resultSet);
+							if (APIRes[0].equals("PASS")){
+								logger.log(LogStatus.PASS, TSID+"  :  "+Keyword+"", "Response :: "+ APIRes[1]+" :: " +Description+" Successful");
+							}else{
+								logger.log(LogStatus.FAIL, TSID+"  :  "+Keyword+"", "Response :: "+ APIRes[1] +" :: Failed To " +Description+ " :: Exception :: " +APIRes[2]);
+							}
 						}else{
 							if(user.equals("user1")){
 								long StepstartTime = System.currentTimeMillis();

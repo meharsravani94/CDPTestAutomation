@@ -1,10 +1,9 @@
 package main.java.com.cdp.Scripts;
 
 import java.io.BufferedReader;
-import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -16,10 +15,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-import org.apache.commons.io.FileUtils;
-import org.apache.http.client.ResponseHandler;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.BasicResponseHandler;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -38,7 +34,14 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import main.java.com.cdp.Scripts.MainThread;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import main.java.ValidationUtils;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.github.fge.jsonschema.core.exceptions.ProcessingException;
+import com.github.fge.jsonschema.main.JsonSchema;
+
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+
 
 public class Keywords{
 	public  WebDriver driver1;
@@ -48,6 +51,7 @@ public class Keywords{
 	public String Result2="";
 	public String Result3="";
 	public String Result4="";
+	int ResponseCode=0;
 	
 	//*****Launch Web Browser**********
 	//METHOD WILL LAUNCH CHROME/IE/FF BROWSER 
@@ -81,9 +85,14 @@ public class Keywords{
 				}else if(browser.equals("HeadLessBrowser")){
 					
 					//driver1 =new HtmlUnitDriver(BrowserVersion.CHROME);
-					System.setProperty("phantomjs.binary.path", System.getProperty("user.dir")+"/External Library Files/phantomjs-2.1.1-windows/phantomjs-2.1.1-windows/bin/phantomjs.exe");
+					//System.setProperty("phantomjs.binary.path", System.getProperty("user.dir")+"/External Library Files/phantomjs-2.1.1-windows/phantomjs-2.1.1-windows/bin/phantomjs.exe");
 					DesiredCapabilities dcaps = new DesiredCapabilities();
+					dcaps.setCapability("browserName", "phantomjs");
+					dcaps.setCapability("acceptSslCerts", true);
+					dcaps.setCapability("phantomjs.cli.args", "--ignore-ssl-errors=true");
+		            dcaps.setJavascriptEnabled(true);
 		            dcaps.setCapability("takesScreenshot", true);
+		            dcaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, System.getProperty("user.dir")+"/External Library Files/phantomjs-2.0.0-windows/phantomjs-2.0.0-windows/bin/phantomjs.exe");
 		            //dcaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, phantomjs.getAbsolutePath());
 					driver1 =new PhantomJSDriver(dcaps);
 				    System.out.println(driver1.getClass().getName());
@@ -107,6 +116,7 @@ public class Keywords{
 					MainThread.APP_LOGS.debug("Application Opening");
 					driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);	
 					driver.get(MainThread.CONFIG.getProperty(target));
+				
 					return "PASS";	
 				}catch (Exception e){
 					ScreenShot( driver, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
@@ -734,16 +744,24 @@ public class Keywords{
 		 public String ScreenShot(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException{
 			   //APP_LOGS.debug("Click on Button");
 			   try{
-			    File file=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			    //File file=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			    byte[] file=(byte[]) ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+			    System.out.println("Screen Shot"+"***********************************************************");
+			    System.out.println(file);
 			    String filepath = (SubFolderPath+"/"+"ScreenShots"+"/");
-			    String filetype = ".jpg";
+			    String filetype = ".png";
 			    //Stringf filename = currentTestCaseName;
 			    String filenamepath = filepath+TCID+"-"+TSID+"-"+DSID+filetype;
-			    FileUtils.copyFile(file, new File(filenamepath));
+			    //FileUtils.copyFile(file, new File(filenamepath));
+			    
+			    
 			    return "PASS";
 			   }catch(Exception e){
 			    //MainThread.APP_LOGS.debug(e);
+				   System.out.println("Screen Shot"+"***********************************************************"+e);
 				   e.printStackTrace();
+				   
+				   
 				   return "FAIL";
 			   }
 			  }
@@ -757,7 +775,7 @@ public class Keywords{
 			    String filepath = (SubFolderPath+"/"+"ScreenShots"+"/");
 			    String filetype = ".jpg";
 			    String filenamepath = filepath+TCID+"-"+TSID+"-"+DSID+filetype;
-			    logger.log(LogStatus.FAIL, TSID+"  :  "+Keyword+"" + logger.addScreenCapture(filenamepath));
+			    logger.log(LogStatus.FAIL, TSID+"  :  "+Keyword+"",  logger.addScreenCapture(filenamepath));
 			    return "PASS";
 			   }catch(Exception e){
 			    //MainThread.APP_LOGS.debug(e);
@@ -765,6 +783,7 @@ public class Keywords{
 				   return "FAIL";
 			   }
 			  }
+	
 		//*****CloseWebApp Method*********
 		//METHOD WILL CLOSE WEB APPLICATION
 		public String CloseWebApp(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException{
@@ -786,48 +805,6 @@ public class Keywords{
 				Thread.sleep(3000);
 				driver.navigate().to(MainThread.CONFIG.getProperty(target));
 				driver.navigate().refresh();
-				return "PASS";	
-			}catch (Exception e){
-				e.printStackTrace();
-				return "FAIL";
-				}
-		}
-		
-		public String GETAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName){
-			try{
-								
-				StringBuilder result = new StringBuilder();
-				StringBuilder result1 = new StringBuilder();
-			      URL url = new URL("http://52.221.32.110/dsapi/v1/LayoutsConfigs");
-			      HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-			      conn.setRequestMethod("GET");
-			      conn.setRequestProperty("Content-Type", "application/json");
-			      conn.setRequestProperty("Authorization", "abcd");
-			      int code = conn.getResponseCode();
-
-			      System.out.println("code="+code);
-			      BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-			      String line;
-			      while ((line = rd.readLine()) != null) {
-			    	 result.append(line);
-			    	 
-			    	 System.out.println("result");
-			    	 System.out.println("result"+result);
-			      }
-			      rd.close();
-			       //System.out.println(result);
-			       //System.out.println(result.getClass().getName());
-			       //System.out.println(result.indexOf("created", 1));
-			      BufferedReader rd1 = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
-			      String line11;
-			      while ((line11 = rd.readLine()) != null) {
-			    	  result1.append(line11);
-			    	 
-			    	 System.out.println("getErrorStream");
-			    	 System.out.println("getErrorStream"+result1);
-			      }
-			      rd.close();
-			      
 				return "PASS";	
 			}catch (Exception e){
 				e.printStackTrace();
@@ -1090,4 +1067,110 @@ public class Keywords{
 				return "FAIL";
 			}
 		}
+
+//**************************************************************************
+//*************************API AUTOMATION SCRIPTS***************************
+//**************************************************************************
+	
+		//GET API
+		public String GETAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws IOException, ProcessingException{
+			try{
+				String GETAPIURL=target=currentTestSuiteXLS.getCellData(currentTestCaseName, "URL", currentTestDataSetID);
+				String ContentType=currentTestSuiteXLS.getCellData(currentTestCaseName, "Content-Type", currentTestDataSetID);
+				String Authorization=currentTestSuiteXLS.getCellData(currentTestCaseName, "Authorization", currentTestDataSetID);
+				
+				StringBuilder result = new StringBuilder();
+				URL url = new URL(GETAPIURL);
+			    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+			    conn.setRequestMethod("GET");
+			    conn.setRequestProperty("Content-Type", ContentType);
+			    conn.setRequestProperty("Authorization", Authorization);
+			    ResponseCode= conn.getResponseCode();
+			    
+			    if(ResponseCode==200){
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }else{
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }
+			    //Convert StringBuilder to String
+			    String jsonText=result.toString();
+			    
+			    //GET API Response Code
+			    System.out.println("conn.getResponseMessage()="+conn.getResponseMessage());
+			    //Reading JSON SchemaFile
+			    File schemaFile = new File(System.getProperty("user.dir")+"/src/main/java/APIScemaFile/"+data+".json");
+				
+			    //CONVERTING SCHEMA FILE TO SCHEMANODE
+				JsonSchema schemaNode = ValidationUtils.getSchemaNode(schemaFile);
+				
+				//CONVERTING JSON REPONSE STRING TO JSONNODE 
+				JsonNode jsonNode = ValidationUtils.getJsonNode(jsonText);
+				
+				//System.out.println(jsonNode);
+				if(ResponseCode==200){
+					//VALIv kj2lddDATING JSON REPONSE WITH SCHEMA
+					if (ValidationUtils.isJsonValid(schemaNode, jsonNode)){
+					  	System.out.println("Valid!");
+					  	return "PASS"+"$"+ResponseCode+"$"+"";
+					}else{
+						ValidationUtils.validateJson(schemaNode, jsonNode);
+						return "FAIL"+"$"+ResponseCode+"$"+"";
+					}
+				}else{
+					return "FAIL"+"$"+ResponseCode+"$"+"";
+				}
+			}catch (Exception e){
+				e.printStackTrace();
+				return "FAIL"+"$"+ResponseCode+"$"+e.toString();
+				}
+		}
+		
+		
+		//DELETE API
+		public String DELETEAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws IOException, ProcessingException{
+			try{
+				String GETAPIURL=target=currentTestSuiteXLS.getCellData(currentTestCaseName, "URL", currentTestDataSetID);
+				
+				StringBuilder result = new StringBuilder();
+				URL url = new URL(GETAPIURL);
+			    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+			    conn.setDoOutput(true);
+			    conn.setRequestMethod("DELETE");
+			    		    
+			  //DELETE API Response Code
+			    ResponseCode= conn.getResponseCode();
+			    
+			    System.out.println("ResponseCode="+ResponseCode);
+			    System.out.println("conn.getResponseMessage()="+conn.getResponseMessage());
+			    BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+			    String line;
+			    while ((line = rd.readLine()) != null) {
+			    	result.append(line);
+			    }
+			    rd.close();
+			    System.out.println("result="+result);
+			    //Convert StringBuilder to String
+			    //String jsonText=result.toString();
+			    
+			    if(ResponseCode==200){
+					return "PASS"+"$"+ResponseCode+"$"+"";
+				}else{
+					return "FAIL"+"$"+ResponseCode+"$";
+				}
+			}catch (Exception e){
+				e.printStackTrace();
+				return "FAIL"+"$"+ResponseCode+"$"+e.toString();
+				}
+		}
+
 }

@@ -1,0 +1,138 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#", 
+  "definitions": {}, 
+  "id": "http://example.com/example.json", 
+  "items": {
+    "id": "/items", 
+    "properties": {
+      "created": {
+        "default": "2016-12-14T10:12:03.577Z", 
+        "description": "An explanation about the purpose of this instance.", 
+        "id": "/items/properties/created", 
+        "title": "The created schema", 
+        "type": "string"
+      }, 
+      "id": {
+        "default": "58511af3f258daa963fce1da", 
+        "description": "An explanation about the purpose of this instance.", 
+        "id": "/items/properties/id", 
+        "title": "The id schema", 
+        "type": "string"
+      }, 
+      "title": {
+        "default": "default", 
+        "description": "An explanation about the purpose of this instance.", 
+        "id": "/items/properties/title", 
+        "title": "The title schema", 
+        "type": "string"
+      }, 
+      "updated": {
+        "default": "2017-01-19T07:11:17.500Z", 
+        "description": "An explanation about the purpose of this instance.", 
+        "id": "/items/properties/updated", 
+        "title": "The updated schema", 
+        "type": "string"
+      }, 
+      "userId": {
+        "default": "501801", 
+        "description": "An explanation about the purpose of this instance.", 
+        "id": "/items/properties/userId", 
+        "title": "The userid schema", 
+        "type": "string"
+      }, 
+      "widgets": {
+        "id": "/items/properties/widgets", 
+        "items": {
+          "id": "/items/properties/widgets/items", 
+          "properties": {
+            "height": {
+              "default": 2, 
+              "description": "An explanation about the purpose of this instance.", 
+              "id": "/items/properties/widgets/items/properties/height", 
+              "title": "The height schema", 
+              "type": "integer"
+            }, 
+            "kind": {
+              "default": "cdp.mapWidget", 
+              "description": "An explanation about the purpose of this instance.", 
+              "id": "/items/properties/widgets/items/properties/kind", 
+              "title": "The kind schema", 
+              "type": "string"
+            }, 
+            "layers": {
+              "id": "/items/properties/widgets/items/properties/layers", 
+              "items": {
+                "default": "lighting", 
+                "description": "An explanation about the purpose of this instance.", 
+                "id": "/items/properties/widgets/items/properties/layers/items", 
+                "title": "The 0 schema", 
+                "type": "string"
+              }, 
+              "type": "array"
+            }, 
+            "left": {
+              "default": 0, 
+              "description": "An explanation about the purpose of this instance.", 
+              "id": "/items/properties/widgets/items/properties/left", 
+              "title": "The left schema", 
+              "type": "integer"
+            }, 
+            "name": {
+              "default": "lightingMapView", 
+              "description": "An explanation about the purpose of this instance.", 
+              "id": "/items/properties/widgets/items/properties/name", 
+              "title": "The name schema", 
+              "type": "string"
+            }, 
+            "position": {
+              "default": 0, 
+              "description": "An explanation about the purpose of this instance.", 
+              "id": "/items/properties/widgets/items/properties/position", 
+              "title": "The position schema", 
+              "type": "integer"
+            }, 
+            "title": {
+              "default": "Lighting Map", 
+              "description": "An explanation about the purpose of this instance.", 
+              "id": "/items/properties/widgets/items/properties/title", 
+              "title": "The title schema", 
+              "type": "string"
+            }, 
+            "top": {
+              "default": 0, 
+              "description": "An explanation about the purpose of this instance.", 
+              "id": "/items/properties/widgets/items/properties/top", 
+              "title": "The top schema", 
+              "type": "integer"
+            }, 
+            "type": {
+              "default": "lighting", 
+              "description": "An explanation about the purpose of this instance.", 
+              "id": "/items/properties/widgets/items/properties/type", 
+              "title": "The type schema", 
+              "type": "string"
+            }, 
+            "width": {
+              "default": 2, 
+              "description": "An explanation about the purpose of this instance.", 
+              "id": "/items/properties/widgets/items/properties/width", 
+              "title": "The width schema", 
+              "type": "integer"
+            }, 
+            "zoom": {
+              "default": 19, 
+              "description": "An explanation about the purpose of this instance.", 
+              "id": "/items/properties/widgets/items/properties/zoom", 
+              "title": "The zoom schema", 
+              "type": "integer"
+            }
+          }, 
+          "type": "object"
+        }, 
+        "type": "array"
+      }
+    }, 
+    "type": "object"
+  }, 
+  "type": "array"
+}
