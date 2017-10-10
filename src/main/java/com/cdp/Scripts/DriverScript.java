@@ -134,7 +134,7 @@ class MainThread  {
 			closebrowsers();
 			AutomationTestReport();
 			copyExtentReportToJenkins();
-			SendEmail();
+			//SendEmail();
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -231,6 +231,7 @@ class MainThread  {
 					//CURRENTTESTNAME IS USED TO PREFIX THE ERROR SCREENSHOT WITH TEST NAME 
 					//CONDITION TO CHECK CUREENT TEST CASE RUN MODE YES/NO
 					if(currentTestSuiteXLS.getCellData("TestCases", "Runmode", currentTestCaseID).equals("Y")){
+				
 						APP_LOGS.debug(browser+"**********Executing Test Cases**********"+currentTestCaseName);
 						resultSet= new ArrayList<String>();
 						//WILL READ CURRENT TEST NAME PRIORITY(P1/P2/P3/P4) TO UPDATE FAILED TEST CASE PRIORITY RESUTLS SHEET
@@ -389,6 +390,12 @@ class MainThread  {
 								Keyword_execution_result_main="NO RUN";
 								resultSet.add(Keyword_execution_result_main);
 							}
+						}else if (Keyword.equals("ERPASSScreenShot")) {
+							System.out.println("else if executed");
+							long StepstartTime = System.currentTimeMillis();
+							long StepEndTime = System.currentTimeMillis();
+							ExecutionTime(StepEndTime, StepstartTime);
+							keywords.ERPASSScreenShot(driver1, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName, logger, Keyword);
 						}else{
 							if(user.equals("user1")){
 								long StepstartTime = System.currentTimeMillis();
@@ -438,7 +445,6 @@ class MainThread  {
 							resetApp();
 							i=method.length+10;//To break execute keywords FOR loop
 							currentTestStepID=5000;//To break execute current steps FOR loop
-							
 						}
 					}
 				}
