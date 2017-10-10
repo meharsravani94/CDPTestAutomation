@@ -1,530 +1,633 @@
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Chrome browser Started
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Calling MainScript
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Chrome::Browser Executing MainScript
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Chrome::GETTING DATE AND START TIME
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Chrome::INITIALIZING TEST RESULTS FOLDER WITH SYS DATE
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Chrome::FolderName2017-10-09
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Chrome::INITIALIZING SUBFOLDER NAME WITH SYS DATE, TIME IN HH:MM
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Chrome::SubFolderNameChrome-Results-18-16-21
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Chrome::Creatring Directory With Current Date
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Chrome::Created Directory With Current Date
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Chrome::Creating SubDirectory With Current TimeStamp & Browser Name
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Chrome::COPYING CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Chrome::COPY COMPLETED FOR CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread FF browser Started
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread Calling MainScript
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread FF::Browser Executing MainScript
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread FF::GETTING DATE AND START TIME
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread FF::INITIALIZING TEST RESULTS FOLDER WITH SYS DATE
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread FF::FolderName2017-10-09
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread FF::INITIALIZING SUBFOLDER NAME WITH SYS DATE, TIME IN HH:MM
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread FF::SubFolderNameFF-Results-18-16-21
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread FF::Creatring Directory With Current Date
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread FF::Created Directory With Current Date
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread FF::Creating SubDirectory With Current TimeStamp & Browser Name
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread FF::COPYING CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:21 main.java.com.cdp.Scripts.MainThread FF::COPY COMPLETED FOR CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread FF::Created SubDirectory With Current TimeStamp & Browser Name
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread FF::COPYING Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread Chrome::Created SubDirectory With Current TimeStamp & Browser Name
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread Chrome::COPYING Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread FF::COPY COMPLETED FOR Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread FF::COPYING Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread Chrome::COPY COMPLETED FOR Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread Chrome::COPYING Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread FF::COPY COMPLETED FOR Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread FF::READING SUITE_WEB XLS FILE FROM OUTPUT DIRECTORY
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread Chrome::COPY COMPLETED FOR Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread Chrome::READING SUITE_WEB XLS FILE FROM OUTPUT DIRECTORY
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread CDPLogin -- N
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread gmail -- N
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread CDPDASHBOARD -- Y
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread FF::COPYING CDPDASHBOARD XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread CDPLogin -- N
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread gmail -- N
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread CDPDASHBOARD -- Y
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread Chrome::COPYING CDPDASHBOARD XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:22 main.java.com.cdp.Scripts.MainThread FF::COPY COMPLETED FOR CDPDASHBOARD XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:23 main.java.com.cdp.Scripts.MainThread Chrome::COPY COMPLETED FOR CDPDASHBOARD XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-09/10/2017 18:16:23 main.java.com.cdp.Scripts.MainThread CDPDASHBOARD -- Y
-09/10/2017 18:16:23 main.java.com.cdp.Scripts.MainThread Chrome**********Executing Test Cases**********CDPDASHBOARD
-09/10/2017 18:16:23 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
-09/10/2017 18:16:23 main.java.com.cdp.Scripts.MainThread CDPDASHBOARD -- Y
-09/10/2017 18:16:23 main.java.com.cdp.Scripts.MainThread FF**********Executing Test Cases**********CDPDASHBOARD
-09/10/2017 18:16:23 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread TSID::TS01
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread executing current keyword::LaunchWebBrowser
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread executing keyword target::
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread Launching 1st FF ::Browser
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.Keywords LaunchingFFBrowser
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread TSID::TS01
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread executing current keyword::LaunchWebBrowser
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread executing keyword target::
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.MainThread Launching 1st Chrome ::Browser
-09/10/2017 18:16:25 main.java.com.cdp.Scripts.Keywords LaunchingChromeBrowser
-09/10/2017 18:16:37 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:16:37 main.java.com.cdp.Scripts.MainThread TSID::TS02
-09/10/2017 18:16:37 main.java.com.cdp.Scripts.MainThread executing current keyword::OpenWebApp
-09/10/2017 18:16:37 main.java.com.cdp.Scripts.MainThread executing keyword target::CDP_DASHBOARD_URL
-09/10/2017 18:16:37 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:16:37 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:16:37 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:16:37 main.java.com.cdp.Scripts.Keywords Application Opening
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS]
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread TSID::TS03
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyTitle
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread executing keyword target::
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread data::CDP Dashboard
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.Keywords Verification of App Title
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.Keywords Verifying Title
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS]
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread TSID::TS04
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread executing current keyword::Maximize
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread executing keyword target::
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:23 main.java.com.cdp.Scripts.Keywords Maximizing Window
-09/10/2017 18:17:25 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS]
-09/10/2017 18:17:25 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:25 main.java.com.cdp.Scripts.MainThread TSID::TS05
-09/10/2017 18:17:25 main.java.com.cdp.Scripts.MainThread executing current keyword::Type
-09/10/2017 18:17:25 main.java.com.cdp.Scripts.MainThread executing keyword target::UserName
-09/10/2017 18:17:25 main.java.com.cdp.Scripts.MainThread data::operator
-09/10/2017 18:17:25 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:25 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:25 main.java.com.cdp.Scripts.Keywords Input the values in Test Box
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread TSID::TS06
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread executing current keyword::Type
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread executing keyword target::Password
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread data::admin
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.Keywords Input the values in Test Box
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread TSID::TS07
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread executing keyword target::SignInButton
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:26 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:31 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:32 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:32 main.java.com.cdp.Scripts.MainThread TSID::TS08
-09/10/2017 18:17:32 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:32 main.java.com.cdp.Scripts.MainThread executing keyword target::dashboard_Button
-09/10/2017 18:17:32 main.java.com.cdp.Scripts.MainThread data::Dashboard
-09/10/2017 18:17:32 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:32 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:32 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:43 main.java.com.cdp.Scripts.Keywords org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='app_mainView_appMainToolbar_menuSectionContainer']/ul/li[1]"}
-  (Session info: chrome=61.0.3163.100)
-  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.09 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'MAHESH-PC', ip: '192.168.3.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\Kowshik\AppData\Local\Temp\scoped_dir1772_23680}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 359fb675232abce72394e6a38bb79e04
-*** Element info: {Using=xpath, value=//div[@id='app_mainView_appMainToolbar_menuSectionContainer']/ul/li[1]}
-09/10/2017 18:17:43 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL]
-09/10/2017 18:17:43 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:43 main.java.com.cdp.Scripts.MainThread TSID::TS09
-09/10/2017 18:17:43 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:43 main.java.com.cdp.Scripts.MainThread executing keyword target::mapview_Button
-09/10/2017 18:17:43 main.java.com.cdp.Scripts.MainThread data::Map View
-09/10/2017 18:17:43 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:43 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:43 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:43 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS]
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread TSID::TS10
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread executing keyword target::alerts_Button
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread data::Alerts
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS]
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread TSID::TS11
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread executing keyword target::policies_Button
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread data::Policies
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS]
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread TSID::TS12
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread executing keyword target::events_Button
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread data::Events
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:44 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread TSID::TS13
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread executing keyword target::reports_Button
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread data::Reports
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread TSID::TS14
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread executing keyword target::SOP_Button
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread data::SOP
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread TSID::TS15
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread executing keyword target::dashboard_Label
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread data::Dashboard:
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:45 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread TSID::TS16
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Text
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread data::Default
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread TSID::TS17
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread executing current keyword::isVisible
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread executing keyword target::dashboard_Menu_Button
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread TSID::TS18
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Widget_Label
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread data::Add Widget
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:46 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread TSID::TS19
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread executing current keyword::isVisible
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Widget_Menu_Button
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread TSID::TS20
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Label
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread data::Add Dashboard
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread TSID::TS21
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread executing current keyword::isVisible
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Menu_Button
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread TSID::TS22
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread executing keyword target::dashboard_Menu_Button
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:47 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread TSID::TS23
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread executing keyword target::deafault_Dashboard_Widget
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread data::Default
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread TSID::TS24
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Menu_Button
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:48 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread TSID::TS25
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyWaterMarkAvailability
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Input
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread data::Enter dashboard name
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread TSID::TS26
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread executing current keyword::Type
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Input
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread data::Demo
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.Keywords Input the values in Test Box
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread TSID::TS27
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Cancel_Button
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread data::Cancel
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:49 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread TSID::TS28
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Ok_Button
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread data::Ok
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread TSID::TS29
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Cancel_Button
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:50 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread TSID::TS30
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Menu_Button
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread TSID::TS31
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread executing current keyword::Type
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Input
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread data::Demo
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.Keywords Input the values in Test Box
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread TSID::TS32
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Ok_Button
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:51 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:52 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:52 main.java.com.cdp.Scripts.MainThread TSID::TS33
-09/10/2017 18:17:52 main.java.com.cdp.Scripts.MainThread executing current keyword::Browserwait
-09/10/2017 18:17:52 main.java.com.cdp.Scripts.MainThread executing keyword target::
-09/10/2017 18:17:52 main.java.com.cdp.Scripts.MainThread data::1000
-09/10/2017 18:17:52 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:52 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread TSID::TS34
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Text
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread data::Demo
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread TSID::TS35
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Text
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread TSID::TS36
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread executing current keyword::isVisible
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Dashboard_Widget_remove_icon
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:53 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread TSID::TS37
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Dashboard_Widget_remove_icon
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread TSID::TS38
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread executing keyword target::delete_Dashboard_Header
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread data::Delete Dashboard
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread TSID::TS39
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread executing keyword target::delete_Confirm_Content
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread data::Are you sure you want to delete this dashboard?
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:54 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread TSID::TS40
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread executing keyword target::delete_Confirm_No_Button
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread data::No
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread TSID::TS41
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread executing keyword target::delete_Confirm_Yes_Button
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread data::Yes
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.Keywords Verifying Text
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread TSID::TS42
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread executing current keyword::isVisible
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread executing keyword target::confirmpopup_Close_Icon
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread TSID::TS43
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread executing keyword target::confirmpopup_Close_Icon
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:55 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread TSID::TS44
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Text
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread TSID::TS45
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Dashboard_Widget_remove_icon
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread TSID::TS46
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread executing keyword target::delete_Confirm_No_Button
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread TSID::TS47
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Text
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread TSID::TS48
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Dashboard_Widget_remove_icon
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:56 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread TSID::TS49
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread executing keyword target::delete_Confirm_Yes_Button
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread TSID::TS50
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Widget_Label
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.Keywords Click on button
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread TSID::TS51
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread executing current keyword::validateList
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread executing keyword target::widgets_Length
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread data::
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
-09/10/2017 18:17:57 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-09/10/2017 18:18:01 main.java.com.cdp.Scripts.Keywords java.lang.IndexOutOfBoundsException: Index: 20, Size: 20
-09/10/2017 18:18:01 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, FAIL]
-09/10/2017 18:18:02 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
-09/10/2017 18:18:13 main.java.com.cdp.Scripts.MainThread Chrome exiting...
-09/10/2017 18:30:36 main.java.com.cdp.Scripts.MainThread FF exiting...
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome browser Started
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Calling MainScript
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::Browser Executing MainScript
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::GETTING DATE AND START TIME
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::INITIALIZING TEST RESULTS FOLDER WITH SYS DATE
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::FolderName2017-10-10
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::INITIALIZING SUBFOLDER NAME WITH SYS DATE, TIME IN HH:MM
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::SubFolderNameChrome-Results-16-25-19
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::Creatring Directory With Current Date
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::Created Directory With Current Date
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::Creating SubDirectory With Current TimeStamp & Browser Name
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::COPYING CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::COPY COMPLETED FOR CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::Created SubDirectory With Current TimeStamp & Browser Name
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::COPYING Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::COPY COMPLETED FOR Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::COPYING Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::COPY COMPLETED FOR Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+10/10/2017 16:25:19 main.java.com.cdp.Scripts.MainThread Chrome::READING SUITE_WEB XLS FILE FROM OUTPUT DIRECTORY
+10/10/2017 16:25:20 main.java.com.cdp.Scripts.MainThread CDPLogin -- N
+10/10/2017 16:25:20 main.java.com.cdp.Scripts.MainThread gmail -- N
+10/10/2017 16:25:20 main.java.com.cdp.Scripts.MainThread CDPDASHBOARD -- Y
+10/10/2017 16:25:20 main.java.com.cdp.Scripts.MainThread Chrome::COPYING CDPDASHBOARD XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+10/10/2017 16:25:20 main.java.com.cdp.Scripts.MainThread Chrome::COPY COMPLETED FOR CDPDASHBOARD XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+10/10/2017 16:25:20 main.java.com.cdp.Scripts.MainThread CDPDASHBOARD -- Y
+10/10/2017 16:25:20 main.java.com.cdp.Scripts.MainThread Chrome**********Executing Test Cases**********CDPDASHBOARD
+10/10/2017 16:25:20 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+10/10/2017 16:25:21 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:21 main.java.com.cdp.Scripts.MainThread TSID::TS01
+10/10/2017 16:25:21 main.java.com.cdp.Scripts.MainThread executing current keyword::LaunchWebBrowser
+10/10/2017 16:25:21 main.java.com.cdp.Scripts.MainThread executing keyword target::
+10/10/2017 16:25:21 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:25:21 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:21 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:21 main.java.com.cdp.Scripts.MainThread Launching 1st Chrome ::Browser
+10/10/2017 16:25:21 main.java.com.cdp.Scripts.Keywords LaunchingChromeBrowser
+10/10/2017 16:25:27 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:27 main.java.com.cdp.Scripts.MainThread TSID::TS02
+10/10/2017 16:25:27 main.java.com.cdp.Scripts.MainThread executing current keyword::OpenWebApp
+10/10/2017 16:25:27 main.java.com.cdp.Scripts.MainThread executing keyword target::CDP_DASHBOARD_URL
+10/10/2017 16:25:27 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:25:27 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:27 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:27 main.java.com.cdp.Scripts.Keywords Application Opening
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS]
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread TSID::TS03
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyTitle
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread executing keyword target::
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread data::CDP Dashboard
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.Keywords Verification of App Title
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.Keywords Verifying Title
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS]
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread TSID::TS04
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread executing current keyword::Maximize
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread executing keyword target::
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:43 main.java.com.cdp.Scripts.Keywords Maximizing Window
+10/10/2017 16:25:45 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS]
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread TSID::TS05
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread executing current keyword::Type
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread executing keyword target::UserName
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread data::operator
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.Keywords Input the values in Test Box
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread TSID::TS06
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread executing current keyword::Type
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread executing keyword target::Password
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread data::admin
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.Keywords Input the values in Test Box
+10/10/2017 16:25:46 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread TSID::TS07
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread executing keyword target::SignInButton
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread TSID::TS08
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread executing keyword target::dashboard_Button
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread data::Dashboard
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:47 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:25:52 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:52 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:52 main.java.com.cdp.Scripts.MainThread TSID::TS09
+10/10/2017 16:25:52 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:52 main.java.com.cdp.Scripts.MainThread executing keyword target::mapview_Button
+10/10/2017 16:25:52 main.java.com.cdp.Scripts.MainThread data::Map View
+10/10/2017 16:25:52 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:52 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:52 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread TSID::TS10
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread executing keyword target::alerts_Button
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread data::Alerts
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread TSID::TS11
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread executing keyword target::policies_Button
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread data::Policies
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread TSID::TS12
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread executing keyword target::events_Button
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread data::Events
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:53 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:25:54 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread TSID::TS13
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread executing keyword target::reports_Button
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread data::Reports
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread TSID::TS14
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread executing keyword target::SOP_Button
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread data::SOP
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:55 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread TSID::TS15
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread executing keyword target::dashboard_Label
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread data::Dashboard:
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread TSID::TS16
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Text
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread data::Default
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread TSID::TS17
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread executing current keyword::isVisible
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread executing keyword target::dashboard_Menu_Button
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread TSID::TS18
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Widget_Label
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread data::Add Widget
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:56 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread TSID::TS19
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread executing current keyword::isVisible
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Widget_Menu_Button
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread TSID::TS20
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Label
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread data::Add Dashboard
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:25:57 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread TSID::TS21
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread executing current keyword::isVisible
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Menu_Button
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread TSID::TS22
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread executing keyword target::dashboard_Menu_Button
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread TSID::TS23
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread executing keyword target::deafault_Dashboard_Widget
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread data::Default
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread TSID::TS24
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Menu_Button
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:58 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread TSID::TS25
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyWaterMarkAvailability
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Input
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread data::Enter dashboard name
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread TSID::TS26
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread executing current keyword::Type
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Input
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread data::Demo
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.Keywords Input the values in Test Box
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread TSID::TS27
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Cancel_Button
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread data::Cancel
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread TSID::TS28
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Ok_Button
+10/10/2017 16:25:59 main.java.com.cdp.Scripts.MainThread data::Ok
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread TSID::TS29
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Cancel_Button
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread TSID::TS30
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Menu_Button
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread TSID::TS31
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread executing current keyword::Type
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Input
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread data::Demo
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:00 main.java.com.cdp.Scripts.Keywords Input the values in Test Box
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread TSID::TS32
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Dashboard_Ok_Button
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread TSID::TS33
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread executing current keyword::Browserwait
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread executing keyword target::
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread data::1000
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:01 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread TSID::TS34
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Text
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread data::Demo
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread TSID::TS35
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Text
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:02 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:26:03 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:03 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:03 main.java.com.cdp.Scripts.MainThread TSID::TS36
+10/10/2017 16:26:03 main.java.com.cdp.Scripts.MainThread executing current keyword::isVisible
+10/10/2017 16:26:03 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Dashboard_Widget_remove_icon
+10/10/2017 16:26:03 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:03 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:03 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread TSID::TS37
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Dashboard_Widget_remove_icon
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread TSID::TS38
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread executing keyword target::delete_Dashboard_Header
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread data::Delete Dashboard
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread TSID::TS39
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread executing keyword target::delete_Confirm_Content
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread data::Are you sure you want to delete this dashboard?
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread TSID::TS40
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread executing keyword target::delete_Confirm_No_Button
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread data::No
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread TSID::TS41
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread executing current keyword::verifyText
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread executing keyword target::delete_Confirm_Yes_Button
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread data::Yes
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.Keywords Verifying Text
+10/10/2017 16:26:04 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread TSID::TS42
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread executing current keyword::isVisible
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread executing keyword target::confirmpopup_Close_Icon
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread TSID::TS43
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread executing keyword target::confirmpopup_Close_Icon
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread TSID::TS44
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Text
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread TSID::TS45
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Dashboard_Widget_remove_icon
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:05 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread TSID::TS46
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread executing keyword target::delete_Confirm_No_Button
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread TSID::TS47
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Text
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread TSID::TS48
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread executing keyword target::default_Dashboard_Widget_remove_icon
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread TSID::TS49
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread executing keyword target::delete_Confirm_Yes_Button
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:06 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread TSID::TS50
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread executing current keyword::Click
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread executing keyword target::add_Widget_Label
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread data::
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.Keywords Click on button
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread TSID::TS51
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread data::Lighting Map
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:07 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:10 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:10 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:10 main.java.com.cdp.Scripts.MainThread TSID::TS52
+10/10/2017 16:26:10 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:10 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:10 main.java.com.cdp.Scripts.MainThread data::Parking Map
+10/10/2017 16:26:10 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:10 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:11 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:11 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:11 main.java.com.cdp.Scripts.MainThread TSID::TS53
+10/10/2017 16:26:11 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:11 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:11 main.java.com.cdp.Scripts.MainThread data::Traffic Map
+10/10/2017 16:26:11 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:11 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:13 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:13 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:13 main.java.com.cdp.Scripts.MainThread TSID::TS54
+10/10/2017 16:26:13 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:13 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:13 main.java.com.cdp.Scripts.MainThread data::Waste Map
+10/10/2017 16:26:13 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:13 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:13 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread TSID::TS55
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread data::Transit Map
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread TSID::TS56
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread data::Environment Map
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:14 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:15 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:15 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:15 main.java.com.cdp.Scripts.MainThread TSID::TS57
+10/10/2017 16:26:15 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:15 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:15 main.java.com.cdp.Scripts.MainThread data::Mobility Map
+10/10/2017 16:26:15 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:15 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:16 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:16 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:16 main.java.com.cdp.Scripts.MainThread TSID::TS58
+10/10/2017 16:26:16 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:16 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:16 main.java.com.cdp.Scripts.MainThread data::Safety & Security Map
+10/10/2017 16:26:16 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:16 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:17 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:17 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:17 main.java.com.cdp.Scripts.MainThread TSID::TS59
+10/10/2017 16:26:17 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:17 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:17 main.java.com.cdp.Scripts.MainThread data::Fault Map
+10/10/2017 16:26:17 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:17 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:18 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:18 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:18 main.java.com.cdp.Scripts.MainThread TSID::TS60
+10/10/2017 16:26:18 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:18 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:18 main.java.com.cdp.Scripts.MainThread data::Parking
+10/10/2017 16:26:18 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:18 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:19 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:19 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:19 main.java.com.cdp.Scripts.MainThread TSID::TS61
+10/10/2017 16:26:19 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:19 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:19 main.java.com.cdp.Scripts.MainThread data::Lighting
+10/10/2017 16:26:19 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:19 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:20 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:20 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:20 main.java.com.cdp.Scripts.MainThread TSID::TS62
+10/10/2017 16:26:20 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:20 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:20 main.java.com.cdp.Scripts.MainThread data::Lighting
+10/10/2017 16:26:20 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:20 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:21 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:21 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:21 main.java.com.cdp.Scripts.MainThread TSID::TS63
+10/10/2017 16:26:21 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:21 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:21 main.java.com.cdp.Scripts.MainThread data::Parking
+10/10/2017 16:26:21 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:21 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:22 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:22 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:22 main.java.com.cdp.Scripts.MainThread TSID::TS64
+10/10/2017 16:26:22 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:22 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:22 main.java.com.cdp.Scripts.MainThread data::Environment
+10/10/2017 16:26:22 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:22 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:23 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:23 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:23 main.java.com.cdp.Scripts.MainThread TSID::TS65
+10/10/2017 16:26:23 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:23 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:23 main.java.com.cdp.Scripts.MainThread data::Traffic
+10/10/2017 16:26:23 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:23 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread TSID::TS66
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread data::Mobility
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread TSID::TS67
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread data::Transit
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:24 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:25 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:25 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:25 main.java.com.cdp.Scripts.MainThread TSID::TS68
+10/10/2017 16:26:25 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:25 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:25 main.java.com.cdp.Scripts.MainThread data::Waste
+10/10/2017 16:26:25 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:25 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:26 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread TSID::TS69
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread data::Safety & Security
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread ******Looping CDPDASHBOARD ::Steps
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread TSID::TS70
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread executing current keyword::Module_layer
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread executing keyword target::widget_Length&widget_Text
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread data::Fault
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread TCID::CDPDASHBOARD
+10/10/2017 16:26:27 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+10/10/2017 16:26:28 main.java.com.cdp.Scripts.MainThread resultset[PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS, PASS]
+10/10/2017 16:26:28 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+10/10/2017 16:26:32 main.java.com.cdp.Scripts.MainThread Chrome exiting...
