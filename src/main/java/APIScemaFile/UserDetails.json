@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#", 
+  "definitions": {}, 
+  "id": "http://example.com/example.json", 
+  "properties": {
+    "correspondenceAddress": {
+      "id": "/properties/correspondenceAddress", 
+      "properties": {
+        "city": {
+          "default": "EKM", 
+          "description": "An explanation about the purpose of this instance.", 
+          "examples": [
+            "EKM"
+          ], 
+          "id": "/properties/correspondenceAddress/properties/city", 
+          "title": "The city schema.", 
+          "type": "string"
+        }, 
+        "country": {
+          "default": "GN", 
+          "description": "An explanation about the purpose of this instance.", 
+          "examples": [
+            "GN"
+          ], 
+          "id": "/properties/correspondenceAddress/properties/country", 
+          "title": "The country schema.", 
+          "type": "string"
+        }, 
+        "postalCode": {
+          "default": "582037", 
+          "description": "An explanation about the purpose of this instance.", 
+          "examples": [
+            "582037"
+          ], 
+          "id": "/properties/correspondenceAddress/properties/postalCode", 
+          "title": "The postalcode schema.", 
+          "type": "string"
+        }, 
+        "state": {
+          "default": "berlin", 
+          "description": "An explanation about the purpose of this instance.", 
+          "examples": [
+            "berlin"
+          ], 
+          "id": "/properties/correspondenceAddress/properties/state", 
+          "title": "The state schema.", 
+          "type": "string"
+        }, 
+        "street": {
+          "default": "65765dd", 
+          "description": "An explanation about the purpose of this instance.", 
+          "examples": [
+            "65765dd"
+          ], 
+          "id": "/properties/correspondenceAddress/properties/street", 
+          "title": "The street schema.", 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }, 
+    "createdOn": {
+      "default": "2017-09-13T18:05:43.000Z", 
+      "description": "An explanation about the purpose of this instance.", 
+      "examples": [
+        "2017-09-13T18:05:43.000Z"
+      ], 
+      "id": "/properties/createdOn", 
+      "title": "The createdon schema.", 
+      "type": "string"
+    }, 
+    "emailAddress": {
+      "default": "superadmin@cisco.com", 
+      "description": "An explanation about the purpose of this instance.", 
+      "examples": [
+        "superadmin@cisco.com"
+      ], 
+      "id": "/properties/emailAddress", 
+      "title": "The emailaddress schema.", 
+      "type": "string"
+    }, 
+    "groupNames": {
+      "id": "/properties/groupNames", 
+      "items": {
+        "default": "CDP_OPERATOR", 
+        "description": "An explanation about the purpose of this instance.", 
+        "examples": [
+          "CDP_OPERATOR"
+        ], 
+        "id": "/properties/groupNames/items", 
+        "title": "The 0 schema.", 
+        "type": "string"
+      }, 
+      "type": "array"
+    }, 
+    "id": {
+      "default": "a4990449-bb71-4db3-b7f4-3dadd26e5eab", 
+      "description": "An explanation about the purpose of this instance.", 
+      "examples": [
+        "a4990449-bb71-4db3-b7f4-3dadd26e5eab"
+      ], 
+      "id": "/properties/id", 
+      "title": "The id schema.", 
+      "type": "string"
+    }, 
+    "name": {
+      "default": "nnn", 
+      "description": "An explanation about the purpose of this instance.", 
+      "examples": [
+        "nnn"
+      ], 
+      "id": "/properties/name", 
+      "title": "The name schema.", 
+      "type": "string"
+    }, 
+    "phoneNumber": {
+      "default": "1234567899", 
+      "description": "An explanation about the purpose of this instance.", 
+      "examples": [
+        "1234567899"
+      ], 
+      "id": "/properties/phoneNumber", 
+      "title": "The phonenumber schema.", 
+      "type": "string"
+    }, 
+    "state": {
+      "default": "ACTIVE", 
+      "description": "An explanation about the purpose of this instance.", 
+      "examples": [
+        "ACTIVE"
+      ], 
+      "id": "/properties/state", 
+      "title": "The state schema.", 
+      "type": "string"
+    }, 
+    "tenant": {
+      "default": "poland.com", 
+      "description": "An explanation about the purpose of this instance.", 
+      "examples": [
+        "poland.com"
+      ], 
+      "id": "/properties/tenant", 
+      "title": "The tenant schema.", 
+      "type": "string"
+    }, 
+    "updatedOn": {
+      "default": "2017-09-13T18:05:43.000Z", 
+      "description": "An explanation about the purpose of this instance.", 
+      "examples": [
+        "2017-09-13T18:05:43.000Z"
+      ], 
+      "id": "/properties/updatedOn", 
+      "title": "The updatedon schema.", 
+      "type": "string"
+    }, 
+    "userName": {
+      "default": "operator", 
+      "description": "An explanation about the purpose of this instance.", 
+      "examples": [
+        "operator"
+      ], 
+      "id": "/properties/userName", 
+      "title": "The username schema.", 
+      "type": "string"
+    }
+  }, 
+  "type": "object"
+}

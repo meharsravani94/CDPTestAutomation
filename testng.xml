@@ -24,13 +24,34 @@
 </test>
  -->
 
-<test name="CDP HeadLess">
+<!-- <test name="CDP HeadLess">
 	<parameter name="browser" value="HeadLessBrowser"></parameter>
 		<classes>
 			<class name="main.java.com.cdp.Scripts.DriverScript" />
 		</classes>
 </test>
+ -->
 
+<test name="CDP POLAND API Testing">
+	<parameter name="browser" value="poland.com"></parameter>
+		<classes>
+			<class name="main.java.com.cdp.Scripts.DriverScript" />
+	</classes>
+</test>
+<!-- 
+<test name="CDP paris API Testing">
+	<parameter name="browser" value="paris.com"></parameter>
+		<classes>
+			<class name="main.java.com.cdp.Scripts.DriverScript" />
+	</classes>
+</test>
 
+<test name="CDP USA API Testing">
+	<parameter name="browser" value="usa.com"></parameter>
+		<classes>
+			<class name="main.java.com.cdp.Scripts.DriverScript" />
+	</classes>
+</test>
 
+ -->
 </suite>

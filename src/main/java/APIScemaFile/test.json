@@ -1,0 +1,1 @@
+{"Query":{"Find":{"orderBy":"Incident.createTime desc","Incident":{"locationId":{"eq":10027},"severity":{"in":"L1,L2,L3,L4,L5"},"applicableDomain":{"eq":"SnS"}}},"SetResponse":{"Message":{"xmlns":"foo","Value":{"count":"[:$Response.Message.Value.Find/count(Result):]"}}}}}

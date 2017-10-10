@@ -244,11 +244,11 @@ class MainThread  {
 							    APP_LOGS.debug("**********ITERATION NUMBER**********"+(currentTestDataSetID-1));
 								//CHECKING RUNMODE FOR THE CURRENT DATA SET
 								if(currentTestSuiteXLS.getCellData(currentTestCaseName, "Runmode", currentTestDataSetID).equals("Y")){
-									logger = reports.startTest(currentTestCaseName+"_DS"+(currentTestDataSetID-1));
 									//Correct_Data=currentTestSuiteXLS.getCellData(currentTestCaseName, Constants.TEST_Correct_Data, currentTestDataSetID);
 									//Createuser=currentTestSuiteXLS.getCellData(currentTestCaseName, Constants.TEST_Createuser, currentTestDataSetID);
 									DSID=currentTestSuiteXLS.getCellData(currentTestCaseName, "DSID", currentTestDataSetID);
 									System.out.println("dsid"+DSID);
+									logger = reports.startTest(currentTestCaseName+"_"+DSID);
 									//ExpectedErrorMsg=currentTestSuiteXLS.getCellData(currentTestCaseName, Constants.TEST_EXP_ERROR_MSG, currentTestDataSetID);
 									// ITERATING THOUGH ALL KEYWORDS
 									executeKeywords(browser);//Multiple Steps OF Test Data
@@ -388,7 +388,7 @@ class MainThread  {
 								Keyword_execution_result_main="NO RUN";
 								resultSet.add(Keyword_execution_result_main);
 							}
-						}else if(Keyword.equals("GETAPI") || Keyword.equals("DELETEAPI")){ 
+						}else if(Keyword.equals("GETAPI") || Keyword.equals("DELETEAPI") || Keyword.equals("POSTAPI") || Keyword.equals("PUTAPI") || Keyword.equals("GetAccssTokenAPI")){ 
 							long StepstartTime = System.currentTimeMillis();
 							String APIResponse=(String) method[i].invoke(keywords, driver1, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
 							long StepEndTime = System.currentTimeMillis();
@@ -398,9 +398,9 @@ class MainThread  {
 							resultSet.add(APIRes[0]);
 							APP_LOGS.debug("resultset"+resultSet);
 							if (APIRes[0].equals("PASS")){
-								logger.log(LogStatus.PASS, TSID+"  :  "+Keyword+"", "Response :: "+ APIRes[1]+" :: " +Description+" Successful");
+								logger.log(LogStatus.PASS, TSID+"  :  "+"Validate "+TCID+" "+DSID+" API", "Response :: "+ APIRes[1]+" :: " +"Validate "+TCID+" "+DSID+" API"+" Successful");
 							}else{
-								logger.log(LogStatus.FAIL, TSID+"  :  "+Keyword+"", "Response :: "+ APIRes[1] +" :: Failed To " +Description+ " :: Exception :: " +APIRes[2]);
+								logger.log(LogStatus.FAIL, TSID+"  :  "+"Validate "+TCID+" "+DSID+" API", "Response :: "+ APIRes[1] +" :: Failed To validate "+TCID+" "+DSID+" API"+ " :: Exception :: " +APIRes[2]);
 							}
 						}else{
 							if(user.equals("user1")){

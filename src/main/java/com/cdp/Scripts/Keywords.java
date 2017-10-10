@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.sql.Connection;
@@ -1075,10 +1076,17 @@ public class Keywords{
 		//GET API
 		public String GETAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws IOException, ProcessingException{
 			try{
-				String GETAPIURL=target=currentTestSuiteXLS.getCellData(currentTestCaseName, "URL", currentTestDataSetID);
+				String GETAPIURL=currentTestSuiteXLS.getCellData(currentTestCaseName, "URL", currentTestDataSetID);
 				String ContentType=currentTestSuiteXLS.getCellData(currentTestCaseName, "Content-Type", currentTestDataSetID);
-				String Authorization=currentTestSuiteXLS.getCellData(currentTestCaseName, "Authorization", currentTestDataSetID);
-				
+				String ScemaFileName=currentTestSuiteXLS.getCellData(currentTestCaseName, DSID, currentTestDataSetID);
+				String Authorization=GetAccssTokenAPI(driver, browser,  target, data, SubFolderPath, TCID, TSID,  DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
+				if(GETAPIURL.startsWith("/dsapi/")){
+					GETAPIURL=MainThread.CONFIG.getProperty("ServerIP")+GETAPIURL;
+				}else if(GETAPIURL.startsWith("/cdp")){
+					GETAPIURL=MainThread.CONFIG.getProperty("ServerIP")+"/t/"+browser+GETAPIURL;
+				}
+				Authorization="Bearer "+Authorization;
+				System.out.println("Authorization="+Authorization);
 				StringBuilder result = new StringBuilder();
 				URL url = new URL(GETAPIURL);
 			    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -1108,13 +1116,14 @@ public class Keywords{
 			    //GET API Response Code
 			    System.out.println("conn.getResponseMessage()="+conn.getResponseMessage());
 			    //Reading JSON SchemaFile
-			    File schemaFile = new File(System.getProperty("user.dir")+"/src/main/java/APIScemaFile/"+data+".json");
+			    File schemaFile = new File(System.getProperty("user.dir")+"/src/main/java/APIScemaFile/"+ScemaFileName+".json");
 				
 			    //CONVERTING SCHEMA FILE TO SCHEMANODE
 				JsonSchema schemaNode = ValidationUtils.getSchemaNode(schemaFile);
 				
 				//CONVERTING JSON REPONSE STRING TO JSONNODE 
 				JsonNode jsonNode = ValidationUtils.getJsonNode(jsonText);
+				System.out.println("jsonNode="+jsonNode);
 				
 				//System.out.println(jsonNode);
 				if(ResponseCode==200){
@@ -1127,7 +1136,8 @@ public class Keywords{
 						return "FAIL"+"$"+ResponseCode+"$"+"";
 					}
 				}else{
-					return "FAIL"+"$"+ResponseCode+"$"+"";
+					System.out.println("else ResponseCode="+ResponseCode);
+					return "FAIL"+"$"+ResponseCode+"$"+result;
 				}
 			}catch (Exception e){
 				e.printStackTrace();
@@ -1139,7 +1149,7 @@ public class Keywords{
 		//DELETE API
 		public String DELETEAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws IOException, ProcessingException{
 			try{
-				String GETAPIURL=target=currentTestSuiteXLS.getCellData(currentTestCaseName, "URL", currentTestDataSetID);
+				String GETAPIURL=currentTestSuiteXLS.getCellData(currentTestCaseName, "URL", currentTestDataSetID);
 				
 				StringBuilder result = new StringBuilder();
 				URL url = new URL(GETAPIURL);
@@ -1151,26 +1161,230 @@ public class Keywords{
 			    ResponseCode= conn.getResponseCode();
 			    
 			    System.out.println("ResponseCode="+ResponseCode);
-			    System.out.println("conn.getResponseMessage()="+conn.getResponseMessage());
-			    BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
-			    String line;
-			    while ((line = rd.readLine()) != null) {
-			    	result.append(line);
-			    }
-			    rd.close();
-			    System.out.println("result="+result);
-			    //Convert StringBuilder to String
-			    //String jsonText=result.toString();
-			    
+			    if(ResponseCode==200){
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }else{
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }			    
 			    if(ResponseCode==200){
 					return "PASS"+"$"+ResponseCode+"$"+"";
 				}else{
-					return "FAIL"+"$"+ResponseCode+"$";
+					return "FAIL"+"$"+ResponseCode+"$"+result;
 				}
 			}catch (Exception e){
 				e.printStackTrace();
 				return "FAIL"+"$"+ResponseCode+"$"+e.toString();
 				}
 		}
+		
+		//POST API
+		public String POSTAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws IOException, ProcessingException{
+			try{
+				String GETAPIURL=currentTestSuiteXLS.getCellData(currentTestCaseName, "URL", currentTestDataSetID);
+				String ContentType=currentTestSuiteXLS.getCellData(currentTestCaseName, "Content-Type", currentTestDataSetID);
+				String ScemaFileName=currentTestSuiteXLS.getCellData(currentTestCaseName, DSID, currentTestDataSetID);
+				String Authorization=GetAccssTokenAPI(driver, browser,  target, data, SubFolderPath, TCID, TSID,  DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
+				//String payload="{\"userId\": \"01\",\"widgets\": [{}],\"title\": \"something\"}";
+				String payload=currentTestSuiteXLS.getCellData(currentTestCaseName, "Payload", currentTestDataSetID);
+				if(GETAPIURL.startsWith("/dsapi/")){
+					GETAPIURL=MainThread.CONFIG.getProperty("ServerIP")+GETAPIURL;
+				}else if(GETAPIURL.startsWith("/cdp")){
+					GETAPIURL=MainThread.CONFIG.getProperty("ServerIP")+"/t/"+browser+GETAPIURL;
+				}
+				Authorization="Bearer "+Authorization;
+				System.out.println("payload="+payload);
+				System.out.println("Authorization="+Authorization);
+				
+				StringBuilder result = new StringBuilder();
+				URL url = new URL(GETAPIURL);
+			    
+			    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
+			    conn.setDoInput(true);
+			    conn.setDoOutput(true);
+			    conn.setRequestMethod("POST");
+			    conn.setRequestProperty("Accept", "application/json");
+			    conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+		        conn.setRequestProperty("Authorization", Authorization);
+			    
+		        OutputStreamWriter writer = new OutputStreamWriter(conn.getOutputStream(), "UTF-8");
+		        writer.write(payload);
+		        writer.close();
+		        		        
+			    ResponseCode= conn.getResponseCode();
+			    
+			    if(ResponseCode==200){
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }else{
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }
+			  //Convert StringBuilder to String
+			    String jsonText=result.toString();
+			    
+			    //GET API Response Code
+			    System.out.println("conn.getResponseMessage()="+conn.getResponseMessage());
+			    //Reading JSON SchemaFile
+			    File schemaFile = new File(System.getProperty("user.dir")+"/src/main/java/APIScemaFile/"+ScemaFileName+".json");
+				
+			    //CONVERTING SCHEMA FILE TO SCHEMANODE
+				JsonSchema schemaNode = ValidationUtils.getSchemaNode(schemaFile);
+				
+				//CONVERTING JSON REPONSE STRING TO JSONNODE 
+				JsonNode jsonNode = ValidationUtils.getJsonNode(jsonText);
+				System.out.println("jsonNode="+jsonNode);
+				
+				//System.out.println(jsonNode);
+				if(ResponseCode==200){
+					//VALIv kj2lddDATING JSON REPONSE WITH SCHEMA
+					if (ValidationUtils.isJsonValid(schemaNode, jsonNode)){
+					  	System.out.println("Valid!");
+					  	return "PASS"+"$"+ResponseCode+"$"+"";
+					}else{
+						ValidationUtils.validateJson(schemaNode, jsonNode);
+						return "FAIL"+"$"+ResponseCode+"$"+"";
+					}
+				}else{
+					System.out.println("else ResponseCode="+ResponseCode);
+					return "FAIL"+"$"+ResponseCode+"$"+result;
+				}
+			}catch (Exception e){
+				e.printStackTrace();
+				return "FAIL"+"$"+ResponseCode+"$"+e.toString();
+				}
+		}
+		
+		
+		//PUT API
+		public String PUTAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws IOException, ProcessingException{
+			try{
+				System.out.println("************************************************");
+				String GETAPIURL=currentTestSuiteXLS.getCellData(currentTestCaseName, "URL", currentTestDataSetID);
+				String ContentType=currentTestSuiteXLS.getCellData(currentTestCaseName, "Content-Type", currentTestDataSetID);
+				String Authorization=currentTestSuiteXLS.getCellData(currentTestCaseName, "Authorization", currentTestDataSetID);
+				String payload="{\"title\": \"something1\",\"userId\": \"01\"}";
+				
+
+				StringBuilder result = new StringBuilder();
+				URL url = new URL("http://52.221.32.110/dsapi/v1/LayoutsConfigs");
+			    
+			    HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+		        connection.setDoInput(true);
+		        connection.setDoOutput(true);
+		        connection.setRequestMethod("PUT");
+		        connection.setRequestProperty("Accept", "application/json");
+		        connection.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+		        OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream(), "UTF-8");
+		        writer.write(payload);
+		        writer.close();
+		        
+		        
+			    ResponseCode= connection.getResponseCode();
+			    
+			    if(ResponseCode==200){
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }else{
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getErrorStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }
+			    if(ResponseCode==200){
+					return "PASS"+"$"+ResponseCode+"$"+"";
+				}else{
+					return "FAIL"+"$"+ResponseCode+"$"+result;
+				}
+			}catch (Exception e){
+				e.printStackTrace();
+				return "FAIL"+"$"+ResponseCode+"$"+e.toString();
+				}
+		}
+		
+		//GET ACCESS TOKEN API
+				public String GetAccssTokenAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws IOException, ProcessingException{
+					try{
+						System.out.println("************************************************");
+						String APIURL=MainThread.CONFIG.getProperty("API_URL")+browser;
+						String payload=MainThread.CONFIG.getProperty(browser);
+						System.out.println("APIURL="+APIURL);
+						System.out.println("payload="+payload);
+
+						StringBuilder result = new StringBuilder();
+						URL url = new URL(APIURL);
+					    
+					    HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+					   
+				        connection.setDoInput(true);
+				        connection.setDoOutput(true);
+				        connection.setRequestMethod("POST");
+				        connection.setRequestProperty("Accept", "application/json");
+				        connection.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+				        OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream(), "UTF-8");
+				        writer.write(payload);
+				        writer.close();
+				        
+				        
+					    ResponseCode= connection.getResponseCode();
+					    
+					    System.out.println("ResponseCode="+ResponseCode);
+					    
+					    if(ResponseCode==200){
+					    	BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+						    String line;
+						    while ((line = rd.readLine()) != null) {
+						    	result.append(line);
+						    }
+						    rd.close();
+					    }else{
+					    	BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getErrorStream()));
+						    String line;
+						    while ((line = rd.readLine()) != null) {
+						    	result.append(line);
+						    }
+						    rd.close();
+					    }
+					    
+					    //Convert StringBuilder to String
+					    String jsonText=result.toString();
+					    JsonNode jsonObject = ValidationUtils.getJsonNode(jsonText);
+					    JsonNode access_token = jsonObject.get("access_token");
+					    System.out.println("access_token="+access_token);
+					    
+					    if(ResponseCode==200){
+							return access_token.toString().substring(1, 37);
+						}else{
+							return "FAIL"+"$"+ResponseCode+"$"+result;
+						}
+					}catch (Exception e){
+						e.printStackTrace();
+						return "FAIL"+"$"+ResponseCode+"$"+e.toString();
+						}
+				}
 }
