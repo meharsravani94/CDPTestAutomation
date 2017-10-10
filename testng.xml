@@ -46,12 +46,5 @@
 	</classes>
 </test>
 
-<test name="CDP USA API Testing">
-	<parameter name="browser" value="usa.com"></parameter>
-		<classes>
-			<class name="main.java.com.cdp.Scripts.DriverScript" />
-	</classes>
-</test>
-
  -->
 </suite>
