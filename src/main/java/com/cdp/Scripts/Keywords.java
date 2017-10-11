@@ -499,7 +499,6 @@ public class Keywords {
 		   try{
 		    String tar[]=target.split("\\&");
 		    List<WebElement> elements = driver.findElements(By.xpath(MainThread.CONFIG.getProperty(tar[0])));
-		    System.out.println("elements="+elements);
 		    for(int i=1; i<=elements.size(); i++){
 		     String SearchText=driver.findElement(By.xpath(MainThread.CONFIG.getProperty(tar[0])+"["+i+"]"+MainThread.CONFIG.getProperty(tar[1]))).getText();
 		     System.out.println("SearchText="+SearchText);
@@ -507,8 +506,8 @@ public class Keywords {
 		    	 System.out.println(data);
 		    	 System.out.println(SearchText);
 		      driver.findElement(By.xpath(MainThread.CONFIG.getProperty(tar[0])+"["+i+"]"+MainThread.CONFIG.getProperty(tar[1]))).click();
-		      continue;
 		     }
+		     continue;
 		    }
 		    return "PASS";
 		   }catch (Exception e){
@@ -517,6 +516,22 @@ public class Keywords {
 		    return "FAIL";
 		   }
 		  }
+	
+	/*public String scroll_Down(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException{
+		   //APP_LOGS.debug("Input The Value In Test Box");
+		   try{
+			   JavascriptExecutor jse = (JavascriptExecutor)driver;
+				jse.executeScript("window.scrollBy(0,250)", "");
+		      continue;
+		     }
+		    
+		    return "PASS";
+		   }catch (Exception e){
+		    ScreenShot( driver, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
+		    e.printStackTrace();
+		    return "FAIL";
+		   }*/
+		  
 	
 	public String validateList(WebDriver driver, String browser, String target, String data, File SubFolderPath,
 			String TCID, String TSID, String DSID, String Correct_Data, int currentTestDataSetID, String user,
