@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#", 
+  "definitions": {}, 
+  "id": "http://example.com/example.json", 
+  "properties": {
+    "Resources": {
+      "id": "/properties/Resources", 
+      "items": {
+        "id": "/properties/Resources/items", 
+        "properties": {
+          "displayName": {
+            "default": "PRIMARY/CDP_ADMIN", 
+            "description": "An explanation about the purpose of this instance.", 
+            "examples": [
+              "PRIMARY/CDP_ADMIN"
+            ], 
+            "id": "/properties/Resources/items/properties/displayName", 
+            "title": "The displayname schema.", 
+            "type": "string"
+          }, 
+          "id": {
+            "default": "e38072da-64fe-4217-9226-ea553a50a0a1", 
+            "description": "An explanation about the purpose of this instance.", 
+            "examples": [
+              "e38072da-64fe-4217-9226-ea553a50a0a1"
+            ], 
+            "id": "/properties/Resources/items/properties/id", 
+            "title": "The id schema.", 
+            "type": "string"
+          }, 
+          "meta": {
+            "id": "/properties/Resources/items/properties/meta", 
+            "properties": {
+              "created": {
+                "default": "2017-09-13T17:12:13", 
+                "description": "An explanation about the purpose of this instance.", 
+                "examples": [
+                  "2017-09-13T17:12:13"
+                ], 
+                "id": "/properties/Resources/items/properties/meta/properties/created", 
+                "title": "The created schema.", 
+                "type": "string"
+              }, 
+              "lastModified": {
+                "default": "2017-09-13T17:12:13", 
+                "description": "An explanation about the purpose of this instance.", 
+                "examples": [
+                  "2017-09-13T17:12:13"
+                ], 
+                "id": "/properties/Resources/items/properties/meta/properties/lastModified", 
+                "title": "The lastmodified schema.", 
+                "type": "string"
+              }
+            }, 
+            "type": "object"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "type": "array"
+    }, 
+    "totalResults": {
+      "default": 4, 
+      "description": "An explanation about the purpose of this instance.", 
+      "examples": [
+        "4"
+      ], 
+      "id": "/properties/totalResults", 
+      "title": "The totalresults schema.", 
+      "type": "integer"
+    }
+  }, 
+  "type": "object"
+}

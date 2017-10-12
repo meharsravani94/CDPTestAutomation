@@ -1,8 +1,13 @@
 package main.java.com.cdp.Scripts;
-
 //import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -35,8 +40,22 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 //import com.pack.sample.TestBase;
+import org.openqa.selenium.ie.*;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import main.java.com.cdp.Scripts.MainThread;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import main.java.ValidationUtils;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.github.fge.jsonschema.core.exceptions.ProcessingException;
+import com.github.fge.jsonschema.main.JsonSchema;
+
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+
 
 public class Keywords {
 	public WebDriver driver1;
@@ -46,84 +65,76 @@ public class Keywords {
 	public String Result2 = "";
 	public String Result3 = "";
 	public String Result4 = "";
-
-	// *****  Web Browser**********
-	// METHOD WILL LAUNCH CHROME/IE/FF BROWSER
-	public WebDriver LaunchWebBrowser(String browser, String target, String data, File SubFolderPath, String TCID,
-			String TSID, String DSID, String Correct_Data, int currentTestDataSetID, String user,
-			Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException {
-		// APP_LOGS.debug("Click on Button");
-		try {
-			MainThread.APP_LOGS.debug("Launching" + browser + "Browser");
-			if (browser.equals("IE")) {
-				System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")
-						+ "/External Library Files/IEDriverServerWin32v253/IEDriverServer.exe");
-				DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
-				caps.setCapability(CapabilityType.ForSeleniumServer.ENSURING_CLEAN_SESSION, true);
-				driver1 = new InternetExplorerDriver();
-				return driver1;
-			} else if (browser.equals("FF")) {
-				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
-						+ "/External Library Files/geckodriver.exe");
-				driver1 = new FirefoxDriver();
-				return driver1;
-				// driver1=new FirefoxDriver();
-			} else if (browser.equals("Chrome")) {
-				System.setProperty("webdriver.chrome.driver",
-						System.getProperty("user.dir") + "/External Library Files/chromedriver_win32/chromedriver.exe");
-				/*
-				 * ChromeOptions sd=new ChromeOptions(); sd.addArguments("headless");
-				 * sd.addArguments("window-size=1400,600"); File file = new
-				 * File("C:/Program Files/phantomjs-1.9.7-windows/phantomjs.exe");
-				 * System.setProperty("phantomjs.binary.path", file.getAbsolutePath()); driver =
-				 * new PhantomJSDriver(); driver1 =new ChromeDriver(sd);
-				 * System.out.println(driver1.getClass().getName());
-				 */
-				driver1 = new ChromeDriver();
-
-				return driver1;
-			} else if (browser.equals("Headless")) {
-				
-				DesiredCapabilities phantom = new DesiredCapabilities();
-				phantom.setJavascriptEnabled(true);                
-				phantom.setCapability("takesScreenshot", true);  
-				phantom.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "C:\\Users\\Kowshik\\Downloads\\phantomjs-1.9.0-windows\\phantomjs.exe");
-				String [] phantomJsArgs = {"--ignore-ssl-errors=true"};
-				phantom.setCapability(PhantomJSDriverService.PHANTOMJS_GHOSTDRIVER_CLI_ARGS, phantomJsArgs);
-				driver1 = new PhantomJSDriver(phantom);
-				return driver1;
-			}
-
-		} catch (Exception e) {
-			// ScreenShot(target, data, Correct_Data, Createuser, browser, ExpectedErrorMsg,
-			// currentTestName, currentTSID, currentDSID);
-			e.printStackTrace();
-			return driver1;
-		}
+	int ResponseCode=0;
+	
+	//*****Launch Web Browser**********
+	//METHOD WILL LAUNCH CHROME/IE/FF BROWSER 
+	public WebDriver LaunchWebBrowser(String browser,String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException{
+	    //APP_LOGS.debug("Click on Button");
+	   try{
+	    MainThread.APP_LOGS.debug("Launching"+browser+"Browser");
+	    if(browser.equals("IE")){
+	     System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"/External Library Files/IEDriverServerWin32v253/IEDriverServer.exe");
+	     DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
+	     caps.setCapability(CapabilityType.ForSeleniumServer.ENSURING_CLEAN_SESSION, true); 
+	     driver1 = new InternetExplorerDriver();
+	     return driver1;
+	    }else if(browser.equals("FF")){
+	     System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/External Library Files/geckodriver-v0.17.0-win64/geckodriver.exe");
+	     driver1=new FirefoxDriver();
+	     return driver1;
+	     //driver1=new FirefoxDriver();
+	    }else if(browser.equals("Chrome")){
+	     System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/External Library Files/chromedriver_win32/chromedriver.exe");
+	     
+	     driver1 =new ChromeDriver();
+	     return driver1;
+	    }
+	    else if(browser.equals("Headless")){
+	     File file = new File("/Users/macmini/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs");
+	                    System.setProperty("phantomjs.binary.path", file.getAbsolutePath());
+	                    driver1 = new PhantomJSDriver();
+	     return driver1;
+	    }else if(browser.equals("HeadLessBrowser")){
+	     //driver1 =new HtmlUnitDriver(BrowserVersion.CHROME);
+	     System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/External Library Files/chromedriver_win32/chromedriver.exe");
+	     ChromeOptions sd=new ChromeOptions();
+	         sd.addArguments("headless");
+	         sd.addArguments("window-size=1400,600");
+	         driver1 =new ChromeDriver(sd);
+	         System.out.println(driver1.getClass().getName());
+	         return driver1;
+	    }
+	    
+	    }catch(Exception e){
+	     //ScreenShot(target, data, Correct_Data, Createuser, browser, ExpectedErrorMsg, currentTestName, currentTSID, currentDSID);
+	     e.printStackTrace();
+	     return driver1;
+	     }
+	   //ScreenShot(target, data, Correct_Data, Createuser, browser, ExpectedErrorMsg, currentTestName, currentTSID, currentDSID);
+	   return driver1;
+	   
+	  }
 		// ScreenShot(target, data, Correct_Data, Createuser, browser, ExpectedErrorMsg,
 		// currentTestName, currentTSID, currentDSID);
-		return driver1;
-	}
-
-	// *****OpenWebApp Method*********
-	// METHOD WILL OPEN VNS WEB URL
-	public String OpenWebApp(WebDriver driver, String browser, String target, String data, File SubFolderPath,
-			String TCID, String TSID, String DSID, String Correct_Data, int currentTestDataSetID, String user,
-			Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException {
-		// APP_LOGS.debug("SUCCESSFULLY OPENED CUREATR WEB APPLICATION");
-		try {
-			MainThread.APP_LOGS.debug("Application Opening");
-			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			driver.get(MainThread.CONFIG.getProperty(target));
-			return "PASS";
-		} catch (Exception e) {
-			ScreenShot(driver, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data,
-					currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
-			e.printStackTrace();
-			return "FAIL";
+			
+		//*****OpenWebApp Method*********
+		//METHOD WILL OPEN VNS WEB URL
+		public String OpenWebApp(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException{
+			//APP_LOGS.debug("SUCCESSFULLY OPENED CUREATR WEB APPLICATION");
+			try{
+					MainThread.APP_LOGS.debug("Application Opening");
+					driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);	
+					driver.get(MainThread.CONFIG.getProperty(target));
+				
+					return "PASS";	
+				}catch (Exception e){
+					ScreenShot( driver, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
+			   		e.printStackTrace();
+					return "FAIL";
+				}
 		}
-	}
-
+	
 	// *****Maximize Method*********
 	// METHOD WILL Maximize BROWSER
 	public String Maximize(WebDriver driver, String browser, String target, String data, File SubFolderPath,
@@ -1020,8 +1031,35 @@ public class Keywords {
 		}
 	}
 
-	// METHOD WILL CAPTURE SCREEN SHOT WHEN TEST STEP FAIL
-	public String ScreenShot(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException{
+		//METHOD WILL CAPTURE SCREEN SHOT WHEN TEST STEP FAIL
+		 public String ScreenShot(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException{
+			   //APP_LOGS.debug("Click on Button");
+			   try{
+			    //File file=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			    byte[] file=(byte[]) ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+			    System.out.println("Screen Shot"+"***********************************************************");
+			    System.out.println(file);
+			    String filepath = (SubFolderPath+"/"+"ScreenShots"+"/");
+			    String filetype = ".png";
+			    //Stringf filename = currentTestCaseName;
+			    String filenamepath = filepath+TCID+"-"+TSID+"-"+DSID+filetype;
+			    //FileUtils.copyFile(file, new File(filenamepath));
+			    
+			    
+			    return "PASS";
+			   }catch(Exception e){
+			    //MainThread.APP_LOGS.debug(e);
+				   System.out.println("Screen Shot"+"***********************************************************"+e);
+				   e.printStackTrace();
+				   
+				   
+				   return "FAIL";
+			   }
+			  }
+		 
+		 
+		//METHOD WILL COPY SCREENSHOT TO EXTEND REPORT WHEN TEST STEP FAIL
+		 public String ExtentReportScreenShot(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName, ExtentTest logger, String Keyword) throws InterruptedException, IOException{
 			   //APP_LOGS.debug("Click on Button");
 			   try{
 				Thread.sleep(3000);
@@ -1031,9 +1069,10 @@ public class Keywords {
 			    String filepath = (SubFolderPath+"/"+"ScreenShots"+"/");
 			    String filetype = ".jpg";
 			    //String filename = currentTestCaseName;
-			    String filenamepath = filepath+TCID+"-"+TSID+filetype;
-			    System.out.println("filenamepath" +filenamepath);
+			    String filenamepath = filepath+TCID+"-"+TSID+"-"+DSID+filetype;
 			    FileUtils.copyFile(file, new File(filenamepath));
+			    logger.log(LogStatus.FAIL, TSID+"  :  "+Keyword+"",  logger.addScreenCapture(filenamepath));
+
 			    return "PASS";
 			   }catch(Exception e){
 			    //MainThread.APP_LOGS.debug(e);
@@ -1060,25 +1099,6 @@ public class Keywords {
 	 * return "FAIL"; } } }
 	 */
 
-	// METHOD WILL COPY SCREENSHOT TO EXTEND REPORT WHEN TEST STEP FAIL
-	public String ExtentReportScreenShot(WebDriver driver, String browser, String target, String data,
-			File SubFolderPath, String TCID, String TSID, String DSID, String Correct_Data, int currentTestDataSetID,
-			String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName, ExtentTest logger, String Keyword)
-			throws InterruptedException, IOException {
-		// APP_LOGS.debug("Click on Button");
-		try {
-			// File file=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			String filepath = (SubFolderPath + "/" + "ScreenShots" + "/");
-			String filetype = ".jpg";
-			String filenamepath = filepath + TCID + "-" + TSID + "-" + DSID + filetype;
-			logger.log(LogStatus.FAIL, TSID + "  :  " + Keyword + "" + logger.addScreenCapture(filenamepath));
-			return "PASS";
-		} catch (Exception e) {
-			// MainThread.APP_LOGS.debug(e);
-			e.printStackTrace();
-			return "FAIL";
-		}
-	}
 	public String ERPASSScreenShot(WebDriver driver, String browser, String target, String data,
 			File SubFolderPath, String TCID, String TSID, String DSID, String Correct_Data, int currentTestDataSetID,
 			String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName, ExtentTest logger, String Keyword)
@@ -1099,15 +1119,11 @@ public class Keywords {
 			return "FAIL";
 		}
 	}
-	
-	
-	// *****CloseWebApp Method*********
-	// METHOD WILL CLOSE WEB APPLICATION
-	public String CloseWebApp(WebDriver driver, String browser, String target, String data, File SubFolderPath,
-			String TCID, String TSID, String DSID, String Correct_Data, int currentTestDataSetID, String user,
-			Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException {
-		// APP_LOGS.debug("SUCCESSFULLY CLOSED WEB APPLICATION");
-		try {
+		//*****CloseWebApp Method*********
+		//METHOD WILL CLOSE WEB APPLICATION
+		public String CloseWebApp(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException{
+		//APP_LOGS.debug("SUCCESSFULLY CLOSED WEB APPLICATION");
+		try{
 			driver.close();
 			driver.quit();
 			System.out.println("driver==" + driver);
@@ -1451,5 +1467,326 @@ public class Keywords {
 			e.printStackTrace();
 			return "FAIL";
 		}
+
 	}
+
+
+//**************************************************************************
+//*************************API AUTOMATION SCRIPTS***************************
+//**************************************************************************
+	
+		//GET API
+		public String GETAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws IOException, ProcessingException{
+			try{
+				String GETAPIURL=currentTestSuiteXLS.getCellData(currentTestCaseName, "URL", currentTestDataSetID);
+				String ContentType=currentTestSuiteXLS.getCellData(currentTestCaseName, "Content-Type", currentTestDataSetID);
+				String ScemaFileName=currentTestSuiteXLS.getCellData(currentTestCaseName, DSID, currentTestDataSetID);
+				String Authorization=GetAccssTokenAPI(driver, browser,  target, data, SubFolderPath, TCID, TSID,  DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
+				if(GETAPIURL.startsWith("/dsapi/")){
+					GETAPIURL=MainThread.CONFIG.getProperty("ServerIP")+GETAPIURL;
+				}else if(GETAPIURL.startsWith("/cdp")){
+					GETAPIURL=MainThread.CONFIG.getProperty("ServerIP")+"/t/"+browser+GETAPIURL;
+				}
+				Authorization="Bearer "+Authorization;
+				System.out.println("Authorization="+Authorization);
+				StringBuilder result = new StringBuilder();
+				URL url = new URL(GETAPIURL);
+			    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+			    conn.setRequestMethod("GET");
+			    conn.setRequestProperty("Content-Type", ContentType);
+			    conn.setRequestProperty("Authorization", Authorization);
+			    ResponseCode= conn.getResponseCode();
+			    
+			    if(ResponseCode==200){
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }else{
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }
+			    //Convert StringBuilder to String
+			    String jsonText=result.toString();
+			    
+			    //GET API Response Code
+			    System.out.println("conn.getResponseMessage()="+conn.getResponseMessage());
+			    //Reading JSON SchemaFile
+			    File schemaFile = new File(System.getProperty("user.dir")+"/src/main/java/APIScemaFile/"+ScemaFileName+".json");
+				
+			    //CONVERTING SCHEMA FILE TO SCHEMANODE
+				JsonSchema schemaNode = ValidationUtils.getSchemaNode(schemaFile);
+				
+				//CONVERTING JSON REPONSE STRING TO JSONNODE 
+				JsonNode jsonNode = ValidationUtils.getJsonNode(jsonText);
+				System.out.println("jsonNode="+jsonNode);
+				
+				//System.out.println(jsonNode);
+				if(ResponseCode==200){
+					//VALIv kj2lddDATING JSON REPONSE WITH SCHEMA
+					if (ValidationUtils.isJsonValid(schemaNode, jsonNode)){
+					  	System.out.println("Valid!");
+					  	return "PASS"+"$"+ResponseCode+"$"+"";
+					}else{
+						ValidationUtils.validateJson(schemaNode, jsonNode);
+						return "FAIL"+"$"+ResponseCode+"$"+"";
+					}
+				}else{
+					System.out.println("else ResponseCode="+ResponseCode);
+					return "FAIL"+"$"+ResponseCode+"$"+result;
+				}
+			}catch (Exception e){
+				e.printStackTrace();
+				return "FAIL"+"$"+ResponseCode+"$"+e.toString();
+				}
+		}
+		
+		
+		//DELETE API
+		public String DELETEAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws IOException, ProcessingException{
+			try{
+				String GETAPIURL=currentTestSuiteXLS.getCellData(currentTestCaseName, "URL", currentTestDataSetID);
+				
+				StringBuilder result = new StringBuilder();
+				URL url = new URL(GETAPIURL);
+			    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+			    conn.setDoOutput(true);
+			    conn.setRequestMethod("DELETE");
+			    		    
+			  //DELETE API Response Code
+			    ResponseCode= conn.getResponseCode();
+			    
+			    System.out.println("ResponseCode="+ResponseCode);
+			    if(ResponseCode==200){
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }else{
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }			    
+			    if(ResponseCode==200){
+					return "PASS"+"$"+ResponseCode+"$"+"";
+				}else{
+					return "FAIL"+"$"+ResponseCode+"$"+result;
+				}
+			}catch (Exception e){
+				e.printStackTrace();
+				return "FAIL"+"$"+ResponseCode+"$"+e.toString();
+				}
+		}
+		
+		//POST API
+		public String POSTAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws IOException, ProcessingException{
+			try{
+				String GETAPIURL=currentTestSuiteXLS.getCellData(currentTestCaseName, "URL", currentTestDataSetID);
+				String ContentType=currentTestSuiteXLS.getCellData(currentTestCaseName, "Content-Type", currentTestDataSetID);
+				String ScemaFileName=currentTestSuiteXLS.getCellData(currentTestCaseName, DSID, currentTestDataSetID);
+				String Authorization=GetAccssTokenAPI(driver, browser,  target, data, SubFolderPath, TCID, TSID,  DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
+				//String payload="{\"userId\": \"01\",\"widgets\": [{}],\"title\": \"something\"}";
+				String payload=currentTestSuiteXLS.getCellData(currentTestCaseName, "Payload", currentTestDataSetID);
+				if(GETAPIURL.startsWith("/dsapi/")){
+					GETAPIURL=MainThread.CONFIG.getProperty("ServerIP")+GETAPIURL;
+				}else if(GETAPIURL.startsWith("/cdp")){
+					GETAPIURL=MainThread.CONFIG.getProperty("ServerIP")+"/t/"+browser+GETAPIURL;
+				}
+				Authorization="Bearer "+Authorization;
+				System.out.println("payload="+payload);
+				System.out.println("Authorization="+Authorization);
+				
+				StringBuilder result = new StringBuilder();
+				URL url = new URL(GETAPIURL);
+			    
+			    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+
+			    conn.setDoInput(true);
+			    conn.setDoOutput(true);
+			    conn.setRequestMethod("POST");
+			    conn.setRequestProperty("Accept", "application/json");
+			    conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+		        conn.setRequestProperty("Authorization", Authorization);
+			    
+		        OutputStreamWriter writer = new OutputStreamWriter(conn.getOutputStream(), "UTF-8");
+		        writer.write(payload);
+		        writer.close();
+		        		        
+			    ResponseCode= conn.getResponseCode();
+			    
+			    if(ResponseCode==200){
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }else{
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }
+			  //Convert StringBuilder to String
+			    String jsonText=result.toString();
+			    
+			    //GET API Response Code
+			    System.out.println("conn.getResponseMessage()="+conn.getResponseMessage());
+			    //Reading JSON SchemaFile
+			    File schemaFile = new File(System.getProperty("user.dir")+"/src/main/java/APIScemaFile/"+ScemaFileName+".json");
+				
+			    //CONVERTING SCHEMA FILE TO SCHEMANODE
+				JsonSchema schemaNode = ValidationUtils.getSchemaNode(schemaFile);
+				
+				//CONVERTING JSON REPONSE STRING TO JSONNODE 
+				JsonNode jsonNode = ValidationUtils.getJsonNode(jsonText);
+				System.out.println("jsonNode="+jsonNode);
+				
+				//System.out.println(jsonNode);
+				if(ResponseCode==200){
+					//VALIv kj2lddDATING JSON REPONSE WITH SCHEMA
+					if (ValidationUtils.isJsonValid(schemaNode, jsonNode)){
+					  	System.out.println("Valid!");
+					  	return "PASS"+"$"+ResponseCode+"$"+"";
+					}else{
+						ValidationUtils.validateJson(schemaNode, jsonNode);
+						return "FAIL"+"$"+ResponseCode+"$"+"";
+					}
+				}else{
+					System.out.println("else ResponseCode="+ResponseCode);
+					return "FAIL"+"$"+ResponseCode+"$"+result;
+				}
+			}catch (Exception e){
+				e.printStackTrace();
+				return "FAIL"+"$"+ResponseCode+"$"+e.toString();
+				}
+		}
+		
+		
+		//PUT API
+		public String PUTAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws IOException, ProcessingException{
+			try{
+				System.out.println("************************************************");
+				String GETAPIURL=currentTestSuiteXLS.getCellData(currentTestCaseName, "URL", currentTestDataSetID);
+				String ContentType=currentTestSuiteXLS.getCellData(currentTestCaseName, "Content-Type", currentTestDataSetID);
+				String Authorization=currentTestSuiteXLS.getCellData(currentTestCaseName, "Authorization", currentTestDataSetID);
+				String payload="{\"title\": \"something1\",\"userId\": \"01\"}";
+				
+
+				StringBuilder result = new StringBuilder();
+				URL url = new URL("http://52.221.32.110/dsapi/v1/LayoutsConfigs");
+			    
+			    HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+		        connection.setDoInput(true);
+		        connection.setDoOutput(true);
+		        connection.setRequestMethod("PUT");
+		        connection.setRequestProperty("Accept", "application/json");
+		        connection.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+		        OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream(), "UTF-8");
+		        writer.write(payload);
+		        writer.close();
+		        
+		        
+			    ResponseCode= connection.getResponseCode();
+			    
+			    if(ResponseCode==200){
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }else{
+			    	BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getErrorStream()));
+				    String line;
+				    while ((line = rd.readLine()) != null) {
+				    	result.append(line);
+				    }
+				    rd.close();
+			    }
+			    if(ResponseCode==200){
+					return "PASS"+"$"+ResponseCode+"$"+"";
+				}else{
+					return "FAIL"+"$"+ResponseCode+"$"+result;
+				}
+			}catch (Exception e){
+				e.printStackTrace();
+				return "FAIL"+"$"+ResponseCode+"$"+e.toString();
+				}
+		}
+		
+		//GET ACCESS TOKEN API
+				public String GetAccssTokenAPI(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws IOException, ProcessingException{
+					try{
+						System.out.println("************************************************");
+						String APIURL=MainThread.CONFIG.getProperty("API_URL")+browser;
+						String payload=MainThread.CONFIG.getProperty(browser);
+						System.out.println("APIURL="+APIURL);
+						System.out.println("payload="+payload);
+
+						StringBuilder result = new StringBuilder();
+						URL url = new URL(APIURL);
+					    
+					    HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+					   
+				        connection.setDoInput(true);
+				        connection.setDoOutput(true);
+				        connection.setRequestMethod("POST");
+				        connection.setRequestProperty("Accept", "application/json");
+				        connection.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+				        OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream(), "UTF-8");
+				        writer.write(payload);
+				        writer.close();
+				        
+				        
+					    ResponseCode= connection.getResponseCode();
+					    
+					    System.out.println("ResponseCode="+ResponseCode);
+					    
+					    if(ResponseCode==200){
+					    	BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+						    String line;
+						    while ((line = rd.readLine()) != null) {
+						    	result.append(line);
+						    }
+						    rd.close();
+					    }else{
+					    	BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getErrorStream()));
+						    String line;
+						    while ((line = rd.readLine()) != null) {
+						    	result.append(line);
+						    }
+						    rd.close();
+					    }
+					    
+					    //Convert StringBuilder to String
+					    String jsonText=result.toString();
+					    JsonNode jsonObject = ValidationUtils.getJsonNode(jsonText);
+					    JsonNode access_token = jsonObject.get("access_token");
+					    System.out.println("access_token="+access_token);
+					    
+					    if(ResponseCode==200){
+							return access_token.toString().substring(1, 37);
+						}else{
+							return "FAIL"+"$"+ResponseCode+"$"+result;
+						}
+					}catch (Exception e){
+						e.printStackTrace();
+						return "FAIL"+"$"+ResponseCode+"$"+e.toString();
+						}
+				}
 }

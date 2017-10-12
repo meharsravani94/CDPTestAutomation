@@ -198,8 +198,7 @@ class MainThread  {
 		    }
 		copyHTMLDoc(SubFolderPath, "CDP_Automation_Test_Report");
 		reports = new ExtentReports(SubFolderPath+"/"+"OutPut_"+"CDP_Automation_Test_Report.html");
-		reports.loadConfig(new File("D:/MohanBaseFramework/CDPAutomation/src/main/resources/extent-config.xml"));
-		//reports.loadConfig("LoadConfig(@"D:\Report\extent-config.xml");");
+		reports.loadConfig(new File(System.getProperty("user.dir")+"/src/main/resources/extent-config.xml"));
 		reports.addSystemInfo("Browser", browser);
 	
 		APP_LOGS.debug(browser+"::Created SubDirectory With Current TimeStamp & Browser Name");
@@ -246,11 +245,11 @@ class MainThread  {
 							    APP_LOGS.debug("**********ITERATION NUMBER**********"+(currentTestDataSetID-1));
 								//CHECKING RUNMODE FOR THE CURRENT DATA SET
 								if(currentTestSuiteXLS.getCellData(currentTestCaseName, "Runmode", currentTestDataSetID).equals("Y")){
-									logger = reports.startTest(currentTestCaseName+"_DS"+(currentTestDataSetID-1));
 									//Correct_Data=currentTestSuiteXLS.getCellData(currentTestCaseName, Constants.TEST_Correct_Data, currentTestDataSetID);
 									//Createuser=currentTestSuiteXLS.getCellData(currentTestCaseName, Constants.TEST_Createuser, currentTestDataSetID);
 									DSID=currentTestSuiteXLS.getCellData(currentTestCaseName, "DSID", currentTestDataSetID);
 									System.out.println("dsid"+DSID);
+									logger = reports.startTest(currentTestCaseName+"_"+DSID);
 									//ExpectedErrorMsg=currentTestSuiteXLS.getCellData(currentTestCaseName, Constants.TEST_EXP_ERROR_MSG, currentTestDataSetID);
 									// ITERATING THOUGH ALL KEYWORDS
 									executeKeywords(browser);//Multiple Steps OF Test Data
@@ -306,6 +305,10 @@ class MainThread  {
 						     }
 						    }
 						   }
+							String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+							File src = new File(SubFolderPath+"/"+"OutPut_"+"CDP_Automation_Test_Report.html");
+							File dest = new File(CONFIG.getProperty("ReportsPath")+timeStamp+browser+".html");
+							FileUtils.copyFile(src, dest);
 						  }
 	public void copyWorkbook(File SubFolderPath, String FileName) throws IOException{
 		APP_LOGS.debug(browser+"::COPYING "+FileName+" XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER");
@@ -396,6 +399,20 @@ class MainThread  {
 							long StepEndTime = System.currentTimeMillis();
 							ExecutionTime(StepEndTime, StepstartTime);
 							keywords.ERPASSScreenShot(driver1, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName, logger, Keyword);
+						}else if(Keyword.equals("GETAPI") || Keyword.equals("DELETEAPI") || Keyword.equals("POSTAPI") || Keyword.equals("PUTAPI") || Keyword.equals("GetAccssTokenAPI")){ 
+							long StepstartTime = System.currentTimeMillis();
+							String APIResponse=(String) method[i].invoke(keywords, driver1, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
+							long StepEndTime = System.currentTimeMillis();
+							ExecutionTime(StepEndTime, StepstartTime);
+							System.out.println("APIResponse="+APIResponse);
+							String[] APIRes=APIResponse.split("\\$");
+							resultSet.add(APIRes[0]);
+							APP_LOGS.debug("resultset"+resultSet);
+							if (APIRes[0].equals("PASS")){
+								logger.log(LogStatus.PASS, TSID+"  :  "+"Validate "+TCID+" "+DSID+" API", "Response :: "+ APIRes[1]+" :: " +"Validate "+TCID+" "+DSID+" API"+" Successful");
+							}else{
+								logger.log(LogStatus.FAIL, TSID+"  :  "+"Validate "+TCID+" "+DSID+" API", "Response :: "+ APIRes[1] +" :: Failed To validate "+TCID+" "+DSID+" API"+ " :: Exception :: " +APIRes[2]);
+							}
 						}else{
 							if(user.equals("user1")){
 								long StepstartTime = System.currentTimeMillis();
@@ -418,6 +435,7 @@ class MainThread  {
 								resultSet.add(Keyword_execution_result_main);
 								if (Keyword_execution_result_main.equals("PASS")){
 									logger.log(LogStatus.PASS, TSID+"  :  "+Keyword+"", Description);
+									
 								}else{
 									keywords.ExtentReportScreenShot(driver2, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName, logger, Keyword);
 								}
@@ -665,12 +683,16 @@ class MainThread  {
 	         }catch(Exception exc) {
 	         }
 	         // Set Subject: header field
+
 	         if(Proceed_ON_FAIL.equals("CRITICAL")) {
 	        	 message.setSubject("Testcase Execution Stopped || "+browser+" Browser || Automation Test Report");
 	         }
 	         else {
 	         message.setSubject("CDP-Dashboard || "+browser+" Browser || Automation Test Report");	 
 	         }
+
+	         message.setSubject("CDP-Dashboard || "+browser+" Browser || Automation Test Report");	 
+	 		
 	         // Create the message part
 	         BodyPart messageBodyPart = new MimeBodyPart();
 

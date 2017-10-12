@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#", 
+  "definitions": {}, 
+  "id": "http://example.com/example.json", 
+  "properties": {
+    "Find": {
+      "id": "/properties/Find", 
+      "properties": {
+        "Result": {
+          "id": "/properties/Find/properties/Result", 
+          "items": {
+            "id": "/properties/Find/properties/Result/items", 
+            "properties": {
+              "Group": {
+                "id": "/properties/Find/properties/Result/items/properties/Group", 
+                "properties": {
+                  "description": {
+                    "default": null, 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "examples": [
+                      "None"
+                    ], 
+                    "id": "/properties/Find/properties/Result/items/properties/Group/properties/description", 
+                    "title": "The description schema.", 
+                    "type": "null"
+                  }, 
+                  "groupTypeId": {
+                    "default": "GroupType.LightIntensity", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "examples": [
+                      "GroupType.LightIntensity"
+                    ], 
+                    "id": "/properties/Find/properties/Result/items/properties/Group/properties/groupTypeId", 
+                    "title": "The grouptypeid schema.", 
+                    "type": "string"
+                  }, 
+                  "name": {
+                    "default": "Lightintensity_policies", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "examples": [
+                      "Lightintensity_policies"
+                    ], 
+                    "id": "/properties/Find/properties/Result/items/properties/Group/properties/name", 
+                    "title": "The name schema.", 
+                    "type": "string"
+                  }, 
+                  "sid": {
+                    "default": "Lightintensity_policies", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "examples": [
+                      "Lightintensity_policies"
+                    ], 
+                    "id": "/properties/Find/properties/Result/items/properties/Group/properties/sid", 
+                    "title": "The sid schema.", 
+                    "type": "string"
+                  }
+                }, 
+                "required": [
+                  "groupTypeId", 
+                  "description", 
+                  "name", 
+                  "sid"
+                ], 
+                "type": "object"
+              }
+            }, 
+            "required": [
+              "Group"
+            ], 
+            "type": "object"
+          }, 
+          "type": "array"
+        }, 
+        "Status": {
+          "default": "Success", 
+          "description": "An explanation about the purpose of this instance.", 
+          "examples": [
+            "Success"
+          ], 
+          "id": "/properties/Find/properties/Status", 
+          "title": "The status schema.", 
+          "type": "string"
+        }
+      }, 
+      "required": [
+        "Status", 
+        "Result"
+      ], 
+      "type": "object"
+    }
+  }, 
+  "required": [
+    "Find"
+  ], 
+  "type": "object"
+}

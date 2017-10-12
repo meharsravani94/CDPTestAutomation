@@ -2,8 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" verbose="3" parallel="tests">
 
-   
-   <test name="CDP Chrome">
+ <test name="CDP Chrome">
 	<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="main.java.com.cdp.Scripts.DriverScript" />
@@ -13,6 +12,9 @@
  <!--  
    <test name="CDP Headless">
 	<parameter name="browser" value="Headless"></parameter>
+ -->
+<!-- <test name="CDP FF">
+	<parameter name="browser" value="FF"></parameter>
 		<classes>
 			<class name="main.java.com.cdp.Scripts.DriverScript" />
 		</classes>
@@ -33,5 +35,20 @@
 		</classes>
 </test>
  -->
+
+<test name="CDP POLAND API Testing">
+	<parameter name="browser" value="poland.com"></parameter>
+		<classes>
+			<class name="main.java.com.cdp.Scripts.DriverScript" />
+	</classes>
+</test>
+
+<!-- <test name="CDP paris API Testing">
+	<parameter name="browser" value="paris.com"></parameter>
+		<classes>
+			<class name="main.java.com.cdp.Scripts.DriverScript" />
+	</classes>
+</test> -->
+
 
 </suite>
