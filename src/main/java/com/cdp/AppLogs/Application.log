@@ -1,65 +1,240 @@
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser browser Started
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread Calling MainScript
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::Browser Executing MainScript
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::GETTING DATE AND START TIME
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::INITIALIZING TEST RESULTS FOLDER WITH SYS DATE
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::FolderName2017-10-03
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::INITIALIZING SUBFOLDER NAME WITH SYS DATE, TIME IN HH:MM
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::SubFolderNameHeadLessBrowser-Results-13-06-40
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::Creatring Directory With Current Date
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::Created Directory With Current Date
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::Creating SubDirectory With Current TimeStamp & Browser Name
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPYING CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPY COMPLETED FOR CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::Created SubDirectory With Current TimeStamp & Browser Name
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPYING Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPY COMPLETED FOR Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPYING Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPY COMPLETED FOR Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-03/10/2017 13:06:40 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::READING SUITE_WEB XLS FILE FROM OUTPUT DIRECTORY
-03/10/2017 13:06:41 main.java.com.cdp.Scripts.MainThread CDPLogin -- N
-03/10/2017 13:06:41 main.java.com.cdp.Scripts.MainThread API -- Y
-03/10/2017 13:06:41 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPYING API XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-03/10/2017 13:06:41 main.java.com.cdp.Scripts.MainThread HeadLessBrowser::COPY COMPLETED FOR API XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
-03/10/2017 13:06:41 main.java.com.cdp.Scripts.MainThread API -- Y
-03/10/2017 13:06:41 main.java.com.cdp.Scripts.MainThread HeadLessBrowser**********Executing Test Cases**********API
-03/10/2017 13:06:41 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
-03/10/2017 13:06:41 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********1
-03/10/2017 13:06:42 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:42 main.java.com.cdp.Scripts.MainThread TSID::TS01
-03/10/2017 13:06:42 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
-03/10/2017 13:06:42 main.java.com.cdp.Scripts.MainThread executing keyword target::
-03/10/2017 13:06:42 main.java.com.cdp.Scripts.MainThread data::GetAPIScema
-03/10/2017 13:06:42 main.java.com.cdp.Scripts.MainThread TCID::API
-03/10/2017 13:06:42 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread resultset[FAIL]
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread ******Looping API ::Steps
-03/10/2017 13:06:48 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
-03/10/2017 13:06:49 main.java.com.cdp.Scripts.MainThread DELETEAPI -- Y
-03/10/2017 13:06:49 main.java.com.cdp.Scripts.MainThread HeadLessBrowser**********Executing Test Cases**********DELETEAPI
-03/10/2017 13:06:49 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
-03/10/2017 13:06:49 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********1
-03/10/2017 13:06:49 main.java.com.cdp.Scripts.MainThread ******Looping DELETEAPI ::Steps
-03/10/2017 13:06:49 main.java.com.cdp.Scripts.MainThread ******Looping DELETEAPI ::Steps
-03/10/2017 13:06:49 main.java.com.cdp.Scripts.MainThread TSID::TS02
-03/10/2017 13:06:49 main.java.com.cdp.Scripts.MainThread executing current keyword::DELETEAPI
-03/10/2017 13:06:49 main.java.com.cdp.Scripts.MainThread executing keyword target::
-03/10/2017 13:06:49 main.java.com.cdp.Scripts.MainThread data::
-03/10/2017 13:06:49 main.java.com.cdp.Scripts.MainThread TCID::DELETEAPI
-03/10/2017 13:06:49 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
-03/10/2017 13:06:50 main.java.com.cdp.Scripts.MainThread resultset[FAIL]
-03/10/2017 13:06:50 main.java.com.cdp.Scripts.MainThread HeadLessBrowser exiting...
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com browser Started
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com browser Started
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread Calling MainScript
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread Calling MainScript
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::Browser Executing MainScript
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::GETTING DATE AND START TIME
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::INITIALIZING TEST RESULTS FOLDER WITH SYS DATE
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::FolderName2017-10-12
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::INITIALIZING SUBFOLDER NAME WITH SYS DATE, TIME IN HH:MM
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::SubFolderNameparis.com-Results-16-02-50
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::Creatring Directory With Current Date
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::Browser Executing MainScript
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::GETTING DATE AND START TIME
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::INITIALIZING TEST RESULTS FOLDER WITH SYS DATE
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::FolderName2017-10-12
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::INITIALIZING SUBFOLDER NAME WITH SYS DATE, TIME IN HH:MM
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::SubFolderNamepoland.com-Results-16-02-50
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::Creatring Directory With Current Date
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::Created Directory With Current Date
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::Creating SubDirectory With Current TimeStamp & Browser Name
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::Created Directory With Current Date
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::Creating SubDirectory With Current TimeStamp & Browser Name
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::COPYING CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::COPYING CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::COPY COMPLETED FOR CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::COPY COMPLETED FOR CDP_Automation_Test_Report HTML FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::Created SubDirectory With Current TimeStamp & Browser Name
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::COPYING Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::Created SubDirectory With Current TimeStamp & Browser Name
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::COPYING Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::COPY COMPLETED FOR Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::COPYING Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::COPY COMPLETED FOR Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::COPY COMPLETED FOR Suite_Web XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::READING SUITE_WEB XLS FILE FROM OUTPUT DIRECTORY
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::COPYING Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::COPY COMPLETED FOR Results XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::READING SUITE_WEB XLS FILE FROM OUTPUT DIRECTORY
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread CDPLogin -- N
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread API -- Y
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::COPYING API XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread poland.com::COPY COMPLETED FOR API XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread CDPLogin -- N
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread API -- Y
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::COPYING API XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:50 main.java.com.cdp.Scripts.MainThread paris.com::COPY COMPLETED FOR API XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread GET -- Y
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread paris.com**********Executing Test Cases**********GET
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread GET -- Y
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread poland.com**********Executing Test Cases**********GET
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********1
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread TSID::TS01
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread executing keyword target::
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread data::
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread TCID::GET
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********1
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread TSID::TS01
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread executing keyword target::
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread data::
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread TCID::GET
+12/10/2017 16:02:51 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+12/10/2017 16:02:57 main.java.com.cdp.Scripts.MainThread resultset[FAIL]
+12/10/2017 16:02:58 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:02:58 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:02:58 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:02:58 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:02:58 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+12/10/2017 16:02:58 main.java.com.cdp.Scripts.MainThread resultset[FAIL]
+12/10/2017 16:02:58 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:02:58 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:02:58 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:02:58 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:02:58 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********2
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread TSID::TS01
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread executing keyword target::
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread data::
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread TCID::GET
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********2
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread TSID::TS01
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread executing keyword target::
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread data::
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread TCID::GET
+12/10/2017 16:02:59 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread resultset[PASS]
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread resultset[PASS]
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********3
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread TSID::TS01
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread executing keyword target::
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread data::
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread TCID::GET
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+12/10/2017 16:03:02 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+12/10/2017 16:03:03 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********3
+12/10/2017 16:03:03 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:03 main.java.com.cdp.Scripts.MainThread TSID::TS01
+12/10/2017 16:03:03 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
+12/10/2017 16:03:03 main.java.com.cdp.Scripts.MainThread executing keyword target::
+12/10/2017 16:03:03 main.java.com.cdp.Scripts.MainThread data::
+12/10/2017 16:03:03 main.java.com.cdp.Scripts.MainThread TCID::GET
+12/10/2017 16:03:03 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+12/10/2017 16:03:04 main.java.com.cdp.Scripts.MainThread resultset[FAIL]
+12/10/2017 16:03:04 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:04 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:04 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:04 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:04 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********4
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread TSID::TS01
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread executing keyword target::
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread data::
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread TCID::GET
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread resultset[PASS]
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:05 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+12/10/2017 16:03:06 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+12/10/2017 16:03:06 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********4
+12/10/2017 16:03:06 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:06 main.java.com.cdp.Scripts.MainThread TSID::TS01
+12/10/2017 16:03:06 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
+12/10/2017 16:03:06 main.java.com.cdp.Scripts.MainThread executing keyword target::
+12/10/2017 16:03:06 main.java.com.cdp.Scripts.MainThread data::
+12/10/2017 16:03:06 main.java.com.cdp.Scripts.MainThread TCID::GET
+12/10/2017 16:03:06 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+12/10/2017 16:03:07 main.java.com.cdp.Scripts.MainThread resultset[PASS]
+12/10/2017 16:03:07 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:07 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:07 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:07 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:07 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********5
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread TSID::TS01
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread executing keyword target::
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread data::
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread TCID::GET
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread resultset[PASS]
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********5
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread TSID::TS01
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread executing keyword target::
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread data::
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread TCID::GET
+12/10/2017 16:03:08 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread resultset[PASS]
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread resultset[PASS]
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********6
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread TSID::TS01
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread executing keyword target::
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread data::
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread TCID::GET
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:10 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+12/10/2017 16:03:11 main.java.com.cdp.Scripts.MainThread Creating Result Column In Current Test Steps and Test Cases Sheet
+12/10/2017 16:03:11 main.java.com.cdp.Scripts.MainThread **********ITERATION NUMBER**********6
+12/10/2017 16:03:11 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:11 main.java.com.cdp.Scripts.MainThread TSID::TS01
+12/10/2017 16:03:11 main.java.com.cdp.Scripts.MainThread executing current keyword::GETAPI
+12/10/2017 16:03:11 main.java.com.cdp.Scripts.MainThread executing keyword target::
+12/10/2017 16:03:11 main.java.com.cdp.Scripts.MainThread data::
+12/10/2017 16:03:11 main.java.com.cdp.Scripts.MainThread TCID::GET
+12/10/2017 16:03:11 main.java.com.cdp.Scripts.MainThread Proceed_ON_FAIL::YES
+12/10/2017 16:03:12 main.java.com.cdp.Scripts.MainThread resultset[PASS]
+12/10/2017 16:03:13 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:13 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:13 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:13 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:13 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+12/10/2017 16:03:13 main.java.com.cdp.Scripts.MainThread resultset[PASS]
+12/10/2017 16:03:13 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:13 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:13 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:13 main.java.com.cdp.Scripts.MainThread ******Looping GET ::Steps
+12/10/2017 16:03:13 main.java.com.cdp.Scripts.MainThread Calling printresults Function To Print PASS/FAIL Status In Results Sheet
+12/10/2017 16:03:13 main.java.com.cdp.Scripts.MainThread POST -- N
+12/10/2017 16:03:13 main.java.com.cdp.Scripts.MainThread POST -- N
+12/10/2017 16:03:14 main.java.com.cdp.Scripts.MainThread DELETEAPI -- N
+12/10/2017 16:03:14 main.java.com.cdp.Scripts.MainThread PUT -- N
+12/10/2017 16:03:14 main.java.com.cdp.Scripts.MainThread DELETEAPI -- N
+12/10/2017 16:03:14 main.java.com.cdp.Scripts.MainThread GetAccssTokenAPI -- N
+12/10/2017 16:03:14 main.java.com.cdp.Scripts.MainThread PUT -- N
+12/10/2017 16:03:14 main.java.com.cdp.Scripts.MainThread GetAccssTokenAPI -- N
+12/10/2017 16:03:14 main.java.com.cdp.Scripts.MainThread paris.com exiting...
+12/10/2017 16:03:15 main.java.com.cdp.Scripts.MainThread poland.com exiting...

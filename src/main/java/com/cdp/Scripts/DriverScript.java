@@ -133,7 +133,7 @@ class MainThread  {
 			closebrowsers();
 			AutomationTestReport();
 			copyExtentReportToJenkins();
-			//SendEmail();
+			SendEmail();
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -197,8 +197,7 @@ class MainThread  {
 		    }
 		copyHTMLDoc(SubFolderPath, "CDP_Automation_Test_Report");
 		reports = new ExtentReports(SubFolderPath+"/"+"OutPut_"+"CDP_Automation_Test_Report.html");
-		reports.loadConfig(new File("D:/MohanBaseFramework/CDPAutomation/src/main/resources/extent-config.xml"));
-		//reports.loadConfig("LoadConfig(@"D:\Report\extent-config.xml");");
+		reports.loadConfig(new File(System.getProperty("user.dir")+"/src/main/resources/extent-config.xml"));
 		reports.addSystemInfo("Browser", browser);
 	
 		APP_LOGS.debug(browser+"::Created SubDirectory With Current TimeStamp & Browser Name");
@@ -304,6 +303,10 @@ class MainThread  {
 						     }
 						    }
 						   }
+							String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+							File src = new File(SubFolderPath+"/"+"OutPut_"+"CDP_Automation_Test_Report.html");
+							File dest = new File(CONFIG.getProperty("ReportsPath")+timeStamp+browser+".html");
+							FileUtils.copyFile(src, dest);
 						  }
 	public void copyWorkbook(File SubFolderPath, String FileName) throws IOException{
 		APP_LOGS.debug(browser+"::COPYING "+FileName+" XLS FILE FROM INPUT FOLDER TO OUTPUT FOLDER");
