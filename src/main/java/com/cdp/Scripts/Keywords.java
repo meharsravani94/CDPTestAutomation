@@ -502,12 +502,14 @@ public class Keywords {
 		    for(int i=1; i<=elements.size(); i++){
 		     String SearchText=driver.findElement(By.xpath(MainThread.CONFIG.getProperty(tar[0])+"["+i+"]"+MainThread.CONFIG.getProperty(tar[1]))).getText();
 		     System.out.println("SearchText="+SearchText);
-		     if(SearchText.equals(data)){
-		    	 System.out.println(data);
+		     if(data.equals(SearchText)){
+		    	 System.out.println("data"+data);
 		    	 System.out.println(SearchText);
-		      driver.findElement(By.xpath(MainThread.CONFIG.getProperty(tar[0])+"["+i+"]"+MainThread.CONFIG.getProperty(tar[1]))).click();
+		    	 WebElement element = driver.findElement(By.xpath(MainThread.CONFIG.getProperty(tar[0])+"["+i+"]"+MainThread.CONFIG.getProperty(tar[1])));
+					JavascriptExecutor js = (JavascriptExecutor) driver;
+					js.executeScript("arguments[0].click();", element);
 		     }
-		     continue;
+		     continue; 
 		    }
 		    return "PASS";
 		   }catch (Exception e){
@@ -517,21 +519,77 @@ public class Keywords {
 		   }
 		  }
 	
-	/*public String scroll_Down(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException{
+	public String validate_List(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException{
 		   //APP_LOGS.debug("Input The Value In Test Box");
 		   try{
-			   JavascriptExecutor jse = (JavascriptExecutor)driver;
-				jse.executeScript("window.scrollBy(0,250)", "");
-		      continue;
+		    String element = driver.findElement(By.xpath(MainThread.CONFIG.getProperty(target))).getText();
+		    System.out.println(element);
+		     if(element.equals(data)){
+		    	 System.out.println(data);
+		    	 driver.findElement(By.xpath(MainThread.CONFIG.getProperty(target))).click();
 		     }
-		    
 		    return "PASS";
 		   }catch (Exception e){
 		    ScreenShot( driver, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
 		    e.printStackTrace();
 		    return "FAIL";
-		   }*/
-		  
+		   }
+		  }
+	
+	public String MouseScroll(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName){
+		   try{
+		    String tar[]=target.split("\\&");
+		    WebElement source = driver.findElement(By.xpath(MainThread.CONFIG.getProperty(target))); 
+		   // WebElement desti = driver.findElement(By.xpath(MainThread.CONFIG.getProperty(tar[1])));
+		       if (actions==null){
+		     System.out.println("Action type executed");
+		     actions = new Actions(driver);
+		    }
+		       //actions.dragAndDrop(source, desti).build().perform();
+		       actions.dragAndDropBy(source, 0 ,250 );
+		       return "PASS";
+		   
+		   }catch (Exception e){
+		    e.printStackTrace();
+		    return "FAIL";
+		    }
+		  }
+	
+	public String scroll_Down(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException{
+		   //APP_LOGS.debug("Input The Value In Test Box");
+		   try{
+			   ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();"
+                       ,driver.findElement(By.xpath(MainThread.CONFIG.getProperty(target))));
+			   return "PASS";
+			   
+		   }catch (Exception e){
+		    ScreenShot( driver, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
+		    e.printStackTrace();
+		    return "FAIL";
+		   }
+	}
+	
+	/*public String remove_Single_Widgets(WebDriver driver, String browser,  String target, String data, File SubFolderPath, String TCID, String TSID,  String DSID, String Correct_Data, int currentTestDataSetID, String user, Xlsx_Reader currentTestSuiteXLS, String currentTestCaseName) throws InterruptedException, IOException{
+		   //APP_LOGS.debug("Input The Value In Test Box");
+		 try{
+			    String tar[]=target.split("\\&");
+			    List<WebElement> elements = driver.findElements(By.xpath(MainThread.CONFIG.getProperty(tar[0])));
+			    for(int i=1; i<=elements.size(); i++){
+			     String element=driver.findElement(By.xpath(MainThread.CONFIG.getProperty(tar[0])+"["+i+"]"+MainThread.CONFIG.getProperty(tar[1]))).isDisplayed();
+			     if(element.isDisplayed())){
+			    	 WebElement element = driver.findElement(By.xpath(MainThread.CONFIG.getProperty(tar[0])+"["+i+"]"+MainThread.CONFIG.getProperty(tar[1])));
+						JavascriptExecutor js = (JavascriptExecutor) driver;
+						js.executeScript("arguments[0].click();", element);
+			     }
+			     continue; 
+			    }
+			    return "PASS";
+		 }catch (Exception e){
+		    ScreenShot( driver, browser, target, data, SubFolderPath, TCID, TSID, DSID, Correct_Data, currentTestDataSetID, user, currentTestSuiteXLS, currentTestCaseName);
+		    e.printStackTrace();
+		    return "FAIL";
+		   }
+	}*/  
 	
 	public String validateList(WebDriver driver, String browser, String target, String data, File SubFolderPath,
 			String TCID, String TSID, String DSID, String Correct_Data, int currentTestDataSetID, String user,
